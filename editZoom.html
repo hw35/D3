@@ -102,13 +102,12 @@
          * Author: Guglielmo Celata
          * Date: sept 1st 2017
          **/
-        
         var el_id = 'chart';
         var obj = document.getElementById(el_id);
-        var divWidth = obj.offsetWidth+500;
-        var margin = {top: 30, right: 500, bottom: 20, left: 0},
-            width = divWidth -25-margin.right,
-            height = 800 - margin.top - margin.bottom,
+        var divWidth = obj.offsetWidth;
+        var margin = {top: 30, right: 0, bottom: 20, left: 0},
+            width = divWidth -25,
+            height = 600 - margin.top - margin.bottom,
             formatNumber = d3.format(","),
             transitioning;
         // sets x and y scale to determine size of visible boxes
@@ -141,144 +140,34 @@
                 .attr("x", 6)
                 .attr("y", 6 - margin.top)
                 .attr("dy", ".75em");
-            console.log(grandparent)
-        d3.csv("RETTLdata.csv", function(data1) {
+        d3.json("makeTree2.json", function(data) {
             d3.csv('Apr 28 Expertise Tagv2.csv', function(data2) {
-                d3.csv('zoomRETTL copy.csv',function(actorData){
-                var dict = {};
-            let expArray=[];
-
-            expArray = data1.map(item=> item.MappedExpertise);
-
-dict2={}
-actorArr = actorData.map(item=> item.Actors);
-let i = 0;
-while(i<actorArr.length){
-    curExpertise = actorData[i].MappedExpertise
-    curExpertise=curExpertise.trim();
-    if(curExpertise.includes(" ")){
-      
-      let first = curExpertise.split(" ").shift();
-      let rest = curExpertise.substring(first.length).toLowerCase();
-      curExpertise = first + rest;
-    }
-    if((curExpertise!="mExpertise")){
-        if(!(curExpertise in dict2)){
-        dict2[curExpertise]=1
-    }
-    else{
-        dict2[curExpertise]+=1
-    }
-    }
-    i++
-  }
-
-  let m = 110;
-    while(m<actorData.length){
-        
-        
-        var curExpertise = actorData[m].MappedExpertise;
-        if(curExpertise.includes(" ")){
-            let first = curExpertise.split(" ").shift();
-            let rest = curExpertise.substring(first.length).toLowerCase();
-            curExpertise = first + rest;
-        }
-        actorData[m].Count=dict2[curExpertise];
-        m+=1;
-    }
-    console.log(dict2)
-
-             
-
-            let mappedExpArr=[Object.keys(dict).length]
-
-            //console.log(expArray)
-            console.log(dict)
-
-            let k = 12;
-            while(k<data2.length){
-                var curExp = data2[k].MappedExpertise;
-                data2[k].Count=dict[curExp];
-                k+=1;
-            }
-
-            let parentName = [];
+            let pColor = [];
             for(let l=0; l<12;l++){
-                parentName[l]=data2[l].MappedExpertise;
+                pColor[l]=data2[l].MappedExpertise;
             }
-        
-            var g
-            const root = d3.stratify()
-                    .id(function(d) { return d.MappedExpertise; })   // Name of the entity (column name is name in csv)
-                    .parentId(function(d) { return d.Parent; })   // Name of the parent (column name is parent in csv)
-                    (data2)
-                    //entries(d.Count);
-                root.sum(function(d) { return d.Count })
+            var color = d3.scaleOrdinal()
+            .domain(pColor)
+            .range([ "#FF0000", "#FF5300", "#FFA500","#FFD200",
+            "#808080","#80C000","#008000","#1ABC9C","#2471A3","#2600C1","#A569BD"])
+
+
+            var root = d3.hierarchy(data);
             console.log(root);
-            const tooltip = d3.select('body')
-                  .append('div')
-                  
-                  .style('position', 'relative')
-                  .style('z-index', '10')
-                  .style('background-color','white')
-                  .style('border', 'solid')
-                  .style('border-width', '2px')
-                  .style('border-radius', '5px')
-                  .style('padding', '5px')
-                  .style('width','300px')
-                  .attr('id', 'tooltip');
-
-            const Tooltip = d3.select('body')
-                  .append('div')
-                  .style('position', 'absolute')
-                  .style('z-index', '10')
-                  .style('background-color','white')
-                  .style('border', 'solid')
-                  .style('border-width', '2px')
-                  .style('border-radius', '5px')
-                  .style('padding', '5px')
-                  .attr('id', 'Tooltip');
-            
-                
-            console.log(width)
-            const treemap = d3.treemap()
-                    //.size([b.Count - a.Count, b.height - a.height])
-                    .size([width, height]) 
-                    .paddingTop(5)       
-                    .paddingRight(5)
-            
-                    //d3.select("#"+root.children[0].children[0].id).append("test")                
-    //.paddingOuter(6)
-    //.padding(20)
-                console.log(actorData)
-                console.log(root)
-        var s = treemap(root);
-        console.log(s)
-        
-        // var thisNode = d3.select("#"+s.children[0].children[0].id);
-        // var someIdDOMElement = (s.children[0].children[0])  
-
-        // console.log(someIdDOMElement.parent.data)
-        // someIdDOMElement.parent.appendChild("test");
-        //d3.select("#"+root.children[0].children[0].id).append("test")
-        console.log(data2.parent)
-        let pColor = [];
-        for(let l=0; l<12;l++){
-            pColor[l]=data2[l].MappedExpertise;
-        }
-        var color = d3.scaleOrdinal()
-        .domain(pColor)
-        .range([ "#FF0000", "#FF5300", "#FFA500","#FFD200",
-        "#808080","#80C000","#008000","#1ABC9C","#2471A3","#2600C1","#A569BD"])
-        //s.children[0].children[0].data.appendChild("sss")
-            console.log(s.children[0].children[0])
-            //onsole.log(s.children[0].children.length)
+            treemap(root
+                .sum(function (d) {
+                    return d.value;
+                })
+                .sort(function (a, b) {
+                    return b.height - a.height || b.value - a.value
+                })
+            );
             display(root);
-        
-            
+            console.log(root);
             function display(d) {
                 // write text into grandparent
-                // and activate click's handler               
+                // and activate click's handler
+                console.log(d.children)
                 grandparent
                     .datum(d.parent)
                     .on("click", transition)
@@ -291,104 +180,13 @@ while(i<actorArr.length){
                     .attr("fill", function () {
                         return '#bbbbbb'
                     });
-                var g1 = svg.insert("g", ".parent")
+                var g1 = svg.insert("g", ".grandparent")
                     .datum(d)
                     .attr("class", "depth");
-                g = g1.selectAll("g")
-                .data(d.children)
-                .enter()
-                .append("g");
-                
-                //?
-                // g7=svg.selectAll()
-                // .data(root.leaves())
-                // .enter()
-                // .append("g");
-                
-                
-                //for tooltip on hover
-                var p = g
-                    .on('mousemove', d => {
-                    tooltip.transition()
-                            .duration(200)
-                            .style('opacity', 1); //opacity of text on bottom when hovering mouse
-                    tooltip.attr('count', d.data.Count);
-                    var a = []
-                    //d.parent.children[num] when g=g1... .data(root.leaves())
-                    for(num=0;num<d.children.length;num++){
-                        m= d.children[num].data.MappedExpertise
-                        //console.log(m)
-                        c=d.children[num].data.Count
-                        // ensures the ones that didnt appear in RETTLcsv arent displayed
-                        if(c!=null){
-                            a.push([m,c])
-                        }
-                        a.sort(compareSecondColumn);
-
-                        function compareSecondColumn(a, b) {
-                            if (a[1] === b[1]) {
-                                return 0;
-                            }
-                            else {
-                                return (a[1] > b[1]) ? -1 : 1;
-                            }
-                        }
-                    }
-                    
-                    tooltip.html(
-                    "<b>" +d.data.MappedExpertise+"</b><br/>"+
-                            a.map(e => e.join(", Value: ")).join("<br />")
-                            //a.join("<br />").join("\r\n")
-                    )
-                    
-                    .style('right', -width-20+`px`)
-                    .style('top', -height+330+`px`)
-                    .attr("data-html","true")
-
-                   
-                })
-
-
-                g.append("rect")
-                    .attr('width',18)
-                    .attr('height',18)
-                    .attr("x", width+10)
-                    .attr("y", function(d,i){ return 50 + i*25}) 
-                    .style("fill", function(d){ return color(d.data.MappedExpertise)})
-
-
-// Add one dot in the legend for each name.
-            g.selectAll("mylabels")
-            .data(root.descendants().filter(function(d){return d.depth==1}))
-            .enter()
-            .append("text")
-            .attr('x', function(d){return width+35})
-            .attr("y", function(d,i){ return 63+i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-            //.style("fill", function(d){ return color(d)})
-            .text(function(d){ return d.data.MappedExpertise})
-            .attr("text-anchor", "left")
-            .style("alignment-baseline", "right")
-                // var q = g
-                // .data(d.children)
-                // .enter()
-                //  .append("rect")
-                // .attr('width',18)
-                // .attr('height',18)
-                // .attr("x", width+35)
-                // .attr("y", function(d,i){ return 50 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-                // //.attr("r", 7)
-                // .style("fill", function(d){ return color(d.data.Parent)})
-
-
-// Add one dot in the legend for each name.
-            // var q = g.append("text")
-            //     .attr("x", width+58)
-            //     .attr("y", function(d,i){ return 63+i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-            //     //.style("fill", function(d){ return color(d)})
-            //     .text(function(d){ return d.data.MappedExpertise})
-            //     .attr("text-anchor", "left")
-            //     .style("alignment-baseline", "right")
-                
+                var g = g1.selectAll("g")
+                    .data(d.children)
+                    .enter().
+                    append("g");
                 // add class and click handler to all g's with children
                 g.filter(function (d) {
                     return d.children;
@@ -408,10 +206,8 @@ while(i<actorArr.length){
                     .call(rect)
                     .append("title")
                     .text(function (d){
-                        return d.data.MappedExpertise;
+                        return d.data.name;
                     });
-
-                    console.log(d.value)
                 /* Adding a foreign object instead of a text object, allows for text wrapping */
                 g.append("foreignObject")
                     .call(rect)
@@ -420,8 +216,8 @@ while(i<actorArr.length){
                     .attr("dy", ".75em")
                     .html(function (d) {
                         return '' +
-                            '<p class="title"> ' + d.data.MappedExpertise + '</p>' /*+
-                            '<p>' + formatNumber(d.value) + '</p>'*/
+                            '<p class="title"> ' + d.data.name + '</p>' +
+                            '<p>' + formatNumber(d.value) + '</p>'
                         ;
                     })
                     .attr("class", "textdiv"); //textdiv class allows us to style the text easily with CSS
@@ -490,11 +286,9 @@ while(i<actorArr.length){
                         return y(d.y1) - y(d.y0);
                     })
                     .attr("fill", function (d) {
-                        console.log(d.data)
-                        return color(d.data.Parent)
-                    })
-                    
-
+                        //console.log(d.parent)
+                        return color(d.parent.data.name);
+                    });
             }
             function foreign(foreign) { /* added */
                 foreign
@@ -521,7 +315,7 @@ while(i<actorArr.length){
                 var res = "";
                 var sep = " > ";
                 d.ancestors().reverse().forEach(function(i){
-                    res += i.data.MappedExpertise + sep;
+                    res += i.data.name + sep;
                 });
                 return res
                     .split(sep)
@@ -530,8 +324,8 @@ while(i<actorArr.length){
                     })
                     .join(sep);
             }
-                })
-
-        })
+            })
     });
+
+    
     </script>
