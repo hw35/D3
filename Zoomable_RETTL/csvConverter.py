@@ -4,10 +4,18 @@ import pandas as pd
 import numpy as np
 
 dictionary = {}
-expArray = []
 df=pd.read_csv("RETTLdata.csv")
 expArray=df["MappedExpertise"]
+org = df["Organization"]
+act = df["Actors"]
+dict_org = {}
 
+i=0
+while i < len(org): 
+    curAct = act[i]
+    if(curAct not in dict_org):
+        dict_org[curAct]=org[i]
+    i+=1
 #expArray = [item['MappedExpertise'] for item in data1]
 i = 0
 while i < len(expArray):
@@ -50,7 +58,7 @@ def transform_tree(tree):
                     "name": key,
                     #"size": val,
                     
-                    "value":dictionary[key],
+                    "count":dictionary[key],
                     "children": transform_tree(val),
                     })
             else:
@@ -62,6 +70,8 @@ def transform_tree(tree):
         else:
             res.append({
                 "name": key,
+                "organization":dict_org[key],
+                "value": 1
                 #"shortName": key,
                 #"children": transform_tree(val),
                 })
@@ -78,11 +88,11 @@ def main():
     And the last part is just printing the result.
 
     """
-    f=open("makeTree2.json","w")
+    f=open("jsonRETTL.json","w")
     # Part1 create a hierarchival dict of dicts of dicts.
     # The leaf cells are however just the last element of each row
     tree = {}
-    with open('mappedE_Actor.csv') as csvfile:
+    with open('csvRETTL.csv') as csvfile:
         reader = csv.reader(csvfile)
         for rid, row in enumerate(reader):
             if rid == 0:  # skip header row

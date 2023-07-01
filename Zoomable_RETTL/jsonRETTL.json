@@ -1,11 +1,12 @@
  {
-  "name": "Expertise",
+  "name": " ",
   "children": [
    {
     "name": "Analytics",
     "children": [
      {
       "name": "Learning analytics",
+      "count": 22,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -106,6 +107,7 @@
      },
      {
       "name": "Multimodal data analysis",
+      "count": 6,
       "children": [
        {
         "name": "Jacob Whitehill",
@@ -141,6 +143,7 @@
      },
      {
       "name": "Computer vision",
+      "count": 1,
       "children": [
        {
         "name": "Salam Khan",
@@ -151,6 +154,7 @@
      },
      {
       "name": "Data mining",
+      "count": 13,
       "children": [
        {
         "name": "Neil Heffernan",
@@ -216,6 +220,7 @@
      },
      {
       "name": "Data visualization representations and dashboards",
+      "count": 8,
       "children": [
        {
         "name": "Joshua Sunshine",
@@ -261,6 +266,7 @@
      },
      {
       "name": "Graphics",
+      "count": 6,
       "children": [
        {
         "name": "Devin Harris",
@@ -296,6 +302,7 @@
      },
      {
       "name": "Behavior analysis",
+      "count": 1,
       "children": [
        {
         "name": "Xiaojin Zhu",
@@ -311,6 +318,7 @@
     "children": [
      {
       "name": "Narrative and simulated environments",
+      "count": 6,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -346,6 +354,7 @@
      },
      {
       "name": "Augmented/virtual/mixed reality",
+      "count": 16,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -426,6 +435,7 @@
      },
      {
       "name": "Games and game making",
+      "count": 12,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -491,6 +501,7 @@
      },
      {
       "name": "Smart & connected communities for learning",
+      "count": 3,
       "children": [
        {
         "name": "Kwangtaek Kim",
@@ -546,6 +557,7 @@
      },
      {
       "name": "Mobile learning",
+      "count": 2,
       "children": [
        {
         "name": "Rhonda Christensen",
@@ -561,6 +573,7 @@
      },
      {
       "name": "MOOCs",
+      "count": 1,
       "children": [
        {
         "name": "Ross Higashi",
@@ -571,6 +584,7 @@
      },
      {
       "name": "Wearable / physiological technology",
+      "count": 6,
       "children": [
        {
         "name": "Nikolas Martelaro",
@@ -606,6 +620,7 @@
      },
      {
       "name": "Online learning",
+      "count": 3,
       "children": [
        {
         "name": "Richard Mayer",
@@ -626,6 +641,7 @@
      },
      {
       "name": "Virtual and remote laboratories / field trips",
+      "count": 1,
       "children": [
        {
         "name": "Jeremy Jarzembak",
@@ -636,6 +652,7 @@
      },
      {
       "name": "Informal settings",
+      "count": 2,
       "children": [
        {
         "name": "Panagiotis Apostolellis",
@@ -651,6 +668,7 @@
      },
      {
       "name": "Formal classroom settings",
+      "count": 1,
       "children": [
        {
         "name": "Lindsay Clare Matsumura",
@@ -666,6 +684,7 @@
     "children": [
      {
       "name": "Modeling and simulation (including agent-based modeling)",
+      "count": 11,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -721,6 +740,7 @@
      },
      {
       "name": "AI",
+      "count": 18,
       "children": [
        {
         "name": "Rogelio Cardona-Rivera",
@@ -811,6 +831,7 @@
      },
      {
       "name": "Pedagogical agents",
+      "count": 10,
       "children": [
        {
         "name": "Mubbasir Kapadia",
@@ -866,6 +887,7 @@
      },
      {
       "name": "Adaptive/Personalized learning and intelligent tutors",
+      "count": 11,
       "children": [
        {
         "name": "Mubbasir Kapadia",
@@ -921,6 +943,7 @@
      },
      {
       "name": "Natural language processing and speech technologies",
+      "count": 10,
       "children": [
        {
         "name": "Stephen Looney",
@@ -976,6 +999,7 @@
      },
      {
       "name": "Machine learning",
+      "count": 19,
       "children": [
        {
         "name": "Jacob Whitehill",
@@ -1076,6 +1100,7 @@
      },
      {
       "name": "Computer vision technologies",
+      "count": 7,
       "children": [
        {
         "name": "Jacob Whitehill",
@@ -1116,6 +1141,7 @@
      },
      {
       "name": "AI knowledge representation and reasoning",
+      "count": 2,
       "children": [
        {
         "name": "Alejandra Magana-de-Leon",
@@ -1131,6 +1157,7 @@
      },
      {
       "name": "Robots",
+      "count": 7,
       "children": [
        {
         "name": "Kwangtaek Kim",
@@ -1206,6 +1233,7 @@
     "children": [
      {
       "name": "Engineering education",
+      "count": 10,
       "children": [
        {
         "name": "Fatma Baytar",
@@ -1261,6 +1289,7 @@
      },
      {
       "name": "Computer science education",
+      "count": 6,
       "children": [
        {
         "name": "Eleanor O'Rourke",
@@ -1296,6 +1325,7 @@
      },
      {
       "name": "Literacy (e.g. reading/reading comprehension writing language learning)",
+      "count": 1,
       "children": [
        {
         "name": "Okim Kang",
@@ -1306,6 +1336,7 @@
      },
      {
       "name": "Data science education",
+      "count": 1,
       "children": [
        {
         "name": "Alejandra Magana-de-Leon",
@@ -1316,6 +1347,7 @@
      },
      {
       "name": "Science education",
+      "count": 17,
       "children": [
        {
         "name": "Colleen Megowan-Romanowicz",
@@ -1401,6 +1433,7 @@
      },
      {
       "name": "Math education",
+      "count": 16,
       "children": [
        {
         "name": "Neil Heffernan",
@@ -1476,6 +1509,7 @@
      },
      {
       "name": "Computational thinking",
+      "count": 3,
       "children": [
        {
         "name": "Ross Higashi",
@@ -1496,6 +1530,7 @@
      },
      {
       "name": "Robotics education",
+      "count": 1,
       "children": [
        {
         "name": "Ross Higashi",
@@ -1506,6 +1541,7 @@
      },
      {
       "name": "ELA education",
+      "count": 5,
       "children": [
        {
         "name": "Julie Washington",
@@ -1536,6 +1572,7 @@
      },
      {
       "name": "Social sciences education",
+      "count": 1,
       "children": [
        {
         "name": "Joseph Polman",
@@ -1551,6 +1588,7 @@
     "children": [
      {
       "name": "HCI",
+      "count": 26,
       "children": [
        {
         "name": "Fatma Baytar",
@@ -1691,6 +1729,7 @@
      },
      {
       "name": "Scenario-based design",
+      "count": 1,
       "children": [
        {
         "name": "Marcela Borge",
@@ -1811,6 +1850,7 @@
      },
      {
       "name": "Mixed methods",
+      "count": 1,
       "children": [
        {
         "name": "Jennifer Cross",
@@ -1821,6 +1861,7 @@
      },
      {
       "name": "Crowdsourcing",
+      "count": 1,
       "children": [
        {
         "name": "Yun Huang",
@@ -1831,6 +1872,7 @@
      },
      {
       "name": "Qualitative methods",
+      "count": 3,
       "children": [
        {
         "name": "Vitaliy Popov",
@@ -1851,6 +1893,7 @@
      },
      {
       "name": "Quantitative methods",
+      "count": 2,
       "children": [
        {
         "name": "Alina Reznitskaya",
@@ -1866,6 +1909,7 @@
      },
      {
       "name": "Survey measures",
+      "count": 2,
       "children": [
        {
         "name": "Gerald Knezek",
@@ -1901,6 +1945,7 @@
     "children": [
      {
       "name": "Material science",
+      "count": 1,
       "children": [
        {
         "name": "Fatma Baytar",
@@ -1911,6 +1956,7 @@
      },
      {
       "name": "Computing technology",
+      "count": 9,
       "children": [
        {
         "name": "Fatma Baytar",
@@ -1956,6 +2002,7 @@
      },
      {
       "name": "Nanotechnology",
+      "count": 2,
       "children": [
        {
         "name": "Dinadayalane Tandabany",
@@ -1966,6 +2013,7 @@
      },
      {
       "name": "Chemistry",
+      "count": 2,
       "children": [
        {
         "name": "Dinadayalane Tandabany",
@@ -1981,6 +2029,7 @@
      },
      {
       "name": "Mathematics",
+      "count": 1,
       "children": [
        {
         "name": "Salam Khan",
@@ -1991,6 +2040,7 @@
      },
      {
       "name": "Physics",
+      "count": 2,
       "children": [
        {
         "name": "Salam Khan",
@@ -2006,6 +2056,7 @@
      },
      {
       "name": "Content security",
+      "count": 1,
       "children": [
        {
         "name": "Kwangtaek Kim",
@@ -2016,6 +2067,7 @@
      },
      {
       "name": "Brain function",
+      "count": 2,
       "children": [
        {
         "name": "Qi Wang",
@@ -2031,6 +2083,7 @@
      },
      {
       "name": "Software engineering",
+      "count": 13,
       "children": [
        {
         "name": "Rhonda Christensen",
@@ -2086,6 +2139,7 @@
      },
      {
       "name": "Manufacturing",
+      "count": 1,
       "children": [
        {
         "name": "Nikolas Martelaro",
@@ -2096,6 +2150,7 @@
      },
      {
       "name": "Autonomous technology",
+      "count": 2,
       "children": [
        {
         "name": "Nikolas Martelaro",
@@ -2111,6 +2166,7 @@
      },
      {
       "name": "Programming",
+      "count": 2,
       "children": [
        {
         "name": "Joshua Sunshine",
@@ -2126,6 +2182,7 @@
      },
      {
       "name": "Medicine",
+      "count": 2,
       "children": [
        {
         "name": "Robin Morris",
@@ -2141,6 +2198,7 @@
      },
      {
       "name": "Spoken language",
+      "count": 3,
       "children": [
        {
         "name": "Diane Litman",
@@ -2161,6 +2219,7 @@
      },
      {
       "name": "Enthnographic methods",
+      "count": 1,
       "children": [
        {
         "name": "Vitaliy Popov",
@@ -2171,6 +2230,7 @@
      },
      {
       "name": "Mineral processing",
+      "count": 2,
       "children": [
        {
         "name": "Pengbo Chu",
@@ -2206,6 +2266,7 @@
      },
      {
       "name": "Philosophy",
+      "count": 1,
       "children": [
        {
         "name": "Jeffrey Ogle",
@@ -2216,6 +2277,7 @@
      },
      {
       "name": "Anthropology",
+      "count": 1,
       "children": [
        {
         "name": "Jeffrey Ogle",
@@ -2226,6 +2288,7 @@
      },
      {
       "name": "Neuroscience and analytics",
+      "count": 1,
       "children": [
        {
         "name": "Richard Gerkin",
@@ -2236,6 +2299,7 @@
      },
      {
       "name": "Physiological sciences",
+      "count": 3,
       "children": [
        {
         "name": "Richard Gerkin",
@@ -2256,6 +2320,7 @@
      },
      {
       "name": "Energy",
+      "count": 1,
       "children": [
        {
         "name": "Daniel O'Brien",
@@ -2266,6 +2331,7 @@
      },
      {
       "name": "Health",
+      "count": 1,
       "children": [
        {
         "name": "Li-Ting Chen",
@@ -2276,6 +2342,7 @@
      },
      {
       "name": "Mathematical sciences",
+      "count": 1,
       "children": [
        {
         "name": "Philip Yasskin",
@@ -2291,6 +2358,7 @@
     "children": [
      {
       "name": "Self-regulation reflection and metacognition",
+      "count": 3,
       "children": [
        {
         "name": "Marcela Borge",
@@ -2311,6 +2379,7 @@
      },
      {
       "name": "Collaborative and/or participatory learning",
+      "count": 10,
       "children": [
        {
         "name": "Marcela Borge",
@@ -2351,6 +2420,7 @@
      },
      {
       "name": "Neuroscience",
+      "count": 5,
       "children": [
        {
         "name": "Lorna Quandt",
@@ -2381,6 +2451,7 @@
      },
      {
       "name": "Embodied learning and cognition",
+      "count": 2,
       "children": [
        {
         "name": "Alejandra Magana-de-Leon",
@@ -2466,6 +2537,7 @@
      },
      {
       "name": "Creativity",
+      "count": 8,
       "children": [
        {
         "name": "Sang Won Lee",
@@ -2511,6 +2583,7 @@
      },
      {
       "name": "Media use",
+      "count": 2,
       "children": [
        {
         "name": "Richard Mayer",
@@ -2526,6 +2599,7 @@
      },
      {
       "name": "Social emotional learning",
+      "count": 2,
       "children": [
        {
         "name": "Erin Ottmar",
@@ -2541,6 +2615,7 @@
      },
      {
       "name": "Multimodal communication",
+      "count": 1,
       "children": [
        {
         "name": "Jivko Sinapov",
@@ -2551,6 +2626,7 @@
      },
      {
       "name": "Identity",
+      "count": 1,
       "children": [
        {
         "name": "Dustin Thoman",
@@ -2566,6 +2642,7 @@
     "children": [
      {
       "name": "Cultural competence/responsiveness",
+      "count": 10,
       "children": [
        {
         "name": "Marcela Borge",
@@ -2626,6 +2703,7 @@
      },
      {
       "name": "Critical theory and identity",
+      "count": 4,
       "children": [
        {
         "name": "Melissa Tehee",
@@ -2646,6 +2724,7 @@
      },
      {
       "name": "Community partnerships",
+      "count": 3,
       "children": [
        {
         "name": "Melissa Tehee",
@@ -2666,6 +2745,7 @@
      },
      {
       "name": "Mental health",
+      "count": 3,
       "children": [
        {
         "name": "John H. L. Hansen",
@@ -2686,6 +2766,7 @@
      },
      {
       "name": "Accessibility and technology",
+      "count": 9,
       "children": [
        {
         "name": "Lorna Quandt",
@@ -2736,6 +2817,7 @@
      },
      {
       "name": "Social welfare development and responsibility",
+      "count": 7,
       "children": [
        {
         "name": "Qi Wang",
@@ -2776,6 +2858,7 @@
      },
      {
       "name": "Broadening participation of historically marginalized groups",
+      "count": 6,
       "children": [
        {
         "name": "Jennifer Cross",
@@ -2806,6 +2889,7 @@
      },
      {
       "name": "Inclusive/universal design",
+      "count": 9,
       "children": [
        {
         "name": "Emily Moore",
@@ -2856,6 +2940,7 @@
      },
      {
       "name": "Ethics",
+      "count": 2,
       "children": [
        {
         "name": "Jeffrey Ogle",
@@ -2876,6 +2961,7 @@
     "children": [
      {
       "name": "Cyber-enhanced/Computer-assisted assessments",
+      "count": 7,
       "children": [
        {
         "name": "Okim Kang",
@@ -2936,6 +3022,7 @@
      },
      {
       "name": "Formative assessment",
+      "count": 1,
       "children": [
        {
         "name": "Vitaliy Popov",
@@ -2951,6 +3038,7 @@
     "children": [
      {
       "name": "Inquiry learning (e.g. project/problem based learning)",
+      "count": 8,
       "children": [
        {
         "name": "Alejandra Magana-de-Leon",
@@ -3001,6 +3089,7 @@
     "children": [
      {
       "name": "Workforce development",
+      "count": 5,
       "children": [
        {
         "name": "Kwangtaek Kim",
@@ -3086,6 +3175,7 @@
      },
      {
       "name": "Educator professional learning",
+      "count": 15,
       "children": [
        {
         "name": "Ross Higashi",
@@ -3166,6 +3256,7 @@
      },
      {
       "name": "Policy",
+      "count": 4,
       "children": [
        {
         "name": "Elaine Wang",
@@ -3191,6 +3282,7 @@
      },
      {
       "name": "Evaluation",
+      "count": 3,
       "children": [
        {
         "name": "Elaine Wang",
@@ -3211,6 +3303,7 @@
      },
      {
       "name": "Research partnerships",
+      "count": 2,
       "children": [
        {
         "name": "Jung Hyup Kim",
@@ -3226,6 +3319,7 @@
      },
      {
       "name": "Pedagogy",
+      "count": 3,
       "children": [
        {
         "name": "Alina Reznitskaya",
@@ -3246,6 +3340,7 @@
      },
      {
       "name": "Instructional design",
+      "count": 11,
       "children": [
        {
         "name": "Ibrahim Dahlstrom-Hakki",

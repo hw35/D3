@@ -1,16 +1,19 @@
 <meta charset="utf-8">
-
+<!-- 
+    Interactive Zoomable Treemap
+    Parts of code taken from Guglielmo Celat at http://bl.ocks.org/JacquesJahnichen/42afd0cde7cbf72ecb81
+-->
 <style>
 	#chart {
-	  width: 100%;
-      height:100%;
+	  max-width: 100%;
 	  overflow:auto;
 	}
 	text {
 	  pointer-events: none;
 	}
 	.grandparent text {
-	  font-weight: bold;
+      font-size: 20px;
+	  /* font-weight: bold; */
 	}
 	rect {
 	  stroke: #fff;
@@ -32,13 +35,7 @@
 	}
 	.children rect.parent {
 	}
-	.children:hover rect.child {
-	  opacity: 1;
-	  stroke-width: 1px;
-	}
-	.children:hover rect.parent {
-	  opacity: 0;
-	}
+
 	.legend {
 	  margin-bottom:8px !important;
 	}
@@ -56,23 +53,23 @@
 	    text-align:left;
 	}
 	.textdiv {
-	    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 	    font-size: 14px;
-	    padding: 7px;
+	    padding: 10px;
 	    cursor: pointer;
 	    overflow:none;
 	}
 	.textdiv .title {
-	    font-size: 102%;
+	    font-size: 100%;
 	    font-weight: bold;
 	    margin-top: 8px;
-	    font-size:11px !important;
+	    font-size:17px !important;
 	}
 	.textdiv p{
 	    line-height: 13px;
-	    margin:0 0 4px !important;
+        /* font-weight: bold; */
+	    margin:0 0 10px !important;
 	    padding:0px;
-	    font-size:10px !important;
+	    font-size:15px !important;
 	}
 </style>
 
@@ -80,21 +77,12 @@
 
     <script src="//d3js.org/d3.v4.min.js"></script>
     <script>
-        /**
-         * Interactive, zoomable treemap, using D3 v4
-         *
-         * A port to D3 v4 of Jacques Jahnichen's Block, using the same budget data
-         * see: http://bl.ocks.org/JacquesJahnichen/42afd0cde7cbf72ecb81
-         *
-         * Author: Guglielmo Celata
-         * Date: sept 1st 2017
-         **/
         var el_id = 'chart';
         var obj = document.getElementById(el_id);
         var divWidth = obj.offsetWidth;
-        var margin = {top: 30, right: 0, bottom: 20, left: 0},
-            width = divWidth -25,
-            height = 800 - margin.top - margin.bottom,
+        var margin = {top: 70, right: 300, bottom: 20, left: 30},
+            width = divWidth * 0.7,
+            height = divWidth * 0.5,
             formatNumber = d3.format(","),
             transitioning;
         // sets x and y scale to determine size of visible boxes
@@ -127,180 +115,57 @@
                 .attr("x", 6)
                 .attr("y", 6 - margin.top)
                 .attr("dy", ".75em");
-        d3.csv("RETTLdata.csv", function(data1) {
+        d3.json("jsonRETTL.json", function(data) {
             d3.csv('Apr 28 Expertise Tagv2.csv', function(data2) {
-                var dict = {};
-            let expArray=[];
-
-            expArray = data1.map(item=> item.MappedExpertise);
-const mappedExp ={
-  mExp: '',
-  count: 0,
-  actors:[]
-};
-
-/* ERROR: prints ALL actors for some reason although i haven't added any to it
- MappedExp should be a blank object but is not.
- The children below mappedExp includes all 560 actors (including repeats), 
- which shouldn't happen. All issues later stems from here.*/
-console.log(mappedExp)
-      //console.log(dict)
-var data3 = data1.map(function(d) {
-  return {
-    exp: d.MappedExpertise,
-    act: d.Actors
-  }
-});
-
-console.log(data3)
-
-
-let i = 0;
-while(i<data3.length){
-//curExp = data3[i].exp;
-  curAct = data3[i].act;
-  var tempArr = String(data3[i].exp).split(",");
-  let j =0;
-  // this console log is correct
-  if(i==3){console.log(tempArr)}
-  while(j<tempArr.length){
-    var cur = tempArr[j];
-    cur=cur.trim();
-    if(cur.includes(" ")){
-      
-      let first = cur.split(" ").shift();
-      let rest = cur.substring(first.length).toLowerCase();
-      cur = first + rest;
-    }
-    // cur value correct. mappedExp again has the extra children with all 560 actors
-    // but the property of the mappedExp itself is correct
-    if(i==3){
-      console.log(cur)
-      console.log(mappedExp)
-      //console.log(dict)
-    }
-    const tempExp = mappedExp;
-    tempExp.mExp=cur;
-
-    //count of tempExp is 2, which means the count is tallying correctly
-    if(i==3){
-      console.log(tempExp)
-      //console.log(dict)
-    }
-    //if the mappedExpertise is not in dict, add a new mappedExp object of it
-    if(!(cur in dict)){
-        if(i==3){console.log("cur not in Dict")}
-      tempExp.count=1
-    tempExp.actors.push(curAct)
-      dict[cur]=tempExp;
-    }
-    //if the mappedExpertise is already inside the dictionary, 
-    //just increment count and add the actors if they're not already in the actors array
-    else{
-        if(i==3){
-          console.log("INSIDE")    
-        }
-        dict[cur].count+=1
-        if(!(curAct in dict[cur].actors)){
-            dict[cur].actors.push(curAct)
-        }
-    }
-    // count is also correct in tempExp, but because of the extra children of it,
-    // the final count ends up being 1 
-    if(i==3){
-        console.log(dict[cur].count)
-        console.log(dict[cur])
-        console.log(tempExp)
-    }
-    j++;
-  }
-//   if(i==0){
-    
-//   }
-  i++;
-}
-
-
-// while(i<data3.length){
-//   curExp = data3[i].exp;
-//   curAct = data3[i].act;
-
-//     const tempExp = mappedExp;
-//     tempExp.mExp=curExp;
-//     // if(i==0){
-//     //   console.log(data3[i].act)
-//     // }
-    
-//     if(!(curExp in dict)){
-//       tempExp.count=1
-//       if(!(curAct in tempExp.actors)){
-//         tempExp.actors.push(curAct)
-//         }
-//       dict[curExp]=tempExp;
-//     }
-//     else{
-//         dict[curExp].count+=1
-//         if(!(data3[i].act in tempExp.actors)){
-//             dict[curExp].actors.push(data3[i].act)
-//         }
-//     }
-//   i++;
-// }
-
-            let mappedExpArr=[Object.keys(dict).length]
-
-            //console.log(expArray)
-            console.log(dict)
-
-            // the treemap data assignment is incorrect. Aagin not sure how to 
-            // get to mExp, count, actors attributes of the mappedExp object
-            // using . gives error (ex: .actors, .count). Strange because I could access it before with
-            // dict[cur].count
-            let k = 12;
-            while(k<data2.length){
-                var curExp = data2[k].MappedExpertise;
-                data2[k].Count=dict[curExp];
-                // curExp is correct but
-                //dict[curExp] repeats only learning engineering
-                console.log(curExp)
-                console.log(dict[curExp])
-                k+=1;
+            let pColor = [];
+            for(let l=1; l<12;l++){
+                pColor[l]=data2[l].MappedExpertise;
             }
-            console.log(data2[0].Count)
+            var color = d3.scaleOrdinal()
+            .domain(pColor)
+            .range([ "#FF0000", "#FF5300", "#FFA500","#FFD200",
+            "#808080","#80C000","#008000","#1ABC9C","#2471A3","#0066FF","#A569BD"])
+            const tooltip = d3.select('body')
+                  .append('div')
+                  
+                  .style('position', 'relative')
+                  .style('z-index', '10')
+                  .style('background-color','white')
+                  .style('border', 'solid')
+                  .style('border-width', '2px')
+                  .style('border-radius', '5px')
+                  .style('padding', '5px')
+                  .style('width','310')
+                  .attr('id', 'tooltip');
 
-            let parentName = [];
-            for(let l=0; l<12;l++){
-                parentName[l]=data2[l].MappedExpertise;
-            }
+            const Tooltip = d3.select('body')
+                  .append('div')
+                  .style('position', 'absolute')
+                  .style('z-index', '10')
+                  .style('background-color','white')
+                  .style('border', 'solid')
+                  .style('border-width', '2px')
+                  .style('border-radius', '5px')
+                  .style('padding', '5px')
+                  .attr('id', 'Tooltip');
 
-
-                const root = d3.stratify()
-                    .id(function(d) { return d.MappedExpertise; })   // Name of the entity (column name is name in csv)
-                    .parentId(function(d) { return d.Parent; })   // Name of the parent (column name is parent in csv)
-                    (data2);
-                root.sum(function(d) { return d.Count })
+            var root = d3.hierarchy(data);
             console.log(root);
-            // treemap(root
-            //     .sum(function (d) {
-            //         return d.Count;
-            //     })
-            //     .sort(function (a, b) {
-            //         return b.height - a.height || b.value - a.value
-            //     })
-            // );
-            const treemap = d3.treemap()
-                    //.size([b.Count - a.Count, b.height - a.height])
-                    .size([width, height])          
-
-    //.paddingOuter(6)
-    //.padding(20)
-  
-        var s = treemap(root);
-            //console.log(root.data[0].key)
+            treemap(root
+                .sum(function (d) {
+                        return d.value;                    
+                })
+                .sort(function (a, b) {
+                    return b.height - a.height || b.value - a.value
+                })
+            );
+            console.log(root)
             display(root);
+            console.log(root);
             function display(d) {
                 // write text into grandparent
                 // and activate click's handler
+                console.log(d.children)
                 grandparent
                     .datum(d.parent)
                     .on("click", transition)
@@ -311,16 +176,59 @@ while(i<data3.length){
                     .datum(d.parent)
                     .select("rect")
                     .attr("fill", function () {
-                        return '#bbbbbb'
-                    });
-                var g1 = svg.insert("g", ".parent")
+                        return '#FFFFFF'
+                    })
+                    // .style("stroke", 'black')
+                    // .style("fill", "none")
+                    // .style("stroke-width", 'border');
+                var g1 = svg.insert("g", ".grandparent")
                     .datum(d)
                     .attr("class", "depth");
                 var g = g1.selectAll("g")
                     .data(d.children)
                     .enter().
                     append("g");
-                // add class and click handler to all g's with children
+                    var p = g
+                    .on('mousemove', d => {
+                    tooltip.transition()
+                            .duration(200)
+                            .style('opacity', 1); //opacity of text on bottom when hovering mouse
+                    //tooltip.attr('count', d.data.count);
+                    var a = []
+                    console.log(d)
+                    for(num=0;num<d.children.length;num++){
+                        m= d.data.children[num].name
+                        //console.log(m)
+                        c=d.data.children[num].count
+                        // ensures the ones that didnt appear in RETTLcsv arent displayed
+                        if(c!=null){
+                            a.push([m,c])
+                        }
+                        a.sort(compareSecondColumn);
+
+                        function compareSecondColumn(a, b) {
+                            if (a[1] === b[1]) {
+                                return 0;
+                            }
+                            else {
+                                return (a[1] > b[1]) ? -1 : 1;
+                            }
+                        }
+                    }
+                    
+                    tooltip.html(
+                    "<b>" +d.data.name+"</b><br/>"+
+                            a.map(e => e.join(", Value: ")).join("<br />")
+                            //a.join("<br />").join("\r\n")
+                    )
+                    
+                    .style('right', -width-20+`px`)
+                    .style('top', -height+330+`px`)
+                    .attr("data-html","true")
+
+                   
+                })
+                
                 g.filter(function (d) {
                     return d.children;
                 })
@@ -339,23 +247,33 @@ while(i<data3.length){
                     .call(rect)
                     .append("title")
                     .text(function (d){
-                        return d.data.MappedExpertise;
+                        return d.data.name;
                     });
-
-                    console.log(d.value)
+                
                 /* Adding a foreign object instead of a text object, allows for text wrapping */
                 g.append("foreignObject")
                     .call(rect)
                     .attr("class", "foreignobj")
                     .append("xhtml:div")
-                    .attr("dy", ".75em")
+                    .attr("dy", "1em")
                     .html(function (d) {
+                        if(d.depth==3){
+                            return '' +
+                            '<p class="title"> ' + d.data.name + '</p>' +
+                            '<p>'+ d.data.organization+'<p>'
+                        }
+                        // else if (d.depth==2){
+                        //     return '' +
+                        //     '<p class="title"> ' + d.data.name + '</p>'+
+                        //     '<p>' + formatNumber(d.value) + '</p>';
+                        // }
                         return '' +
-                            '<p class="title"> ' + d.data.MappedExpertise + '</p>' +
-                            '<p>' + formatNumber(d.value) + '</p>'
-                        ;
+                        '<p class="title"> ' + d.data.name + '</p>'
+                            
                     })
                     .attr("class", "textdiv"); //textdiv class allows us to style the text easily with CSS
+                    
+
                 function transition(d) {
                     if (transitioning || !d) return;
                     transitioning = true;
@@ -397,6 +315,33 @@ while(i<data3.length){
                 }
                 return g;
             }
+
+            for(i=1;i<pColor.length;i++){
+                svg.append("rect")
+                .attr('width',18)
+                .attr('height',18)
+                .attr("x", width+20)
+                .attr("y", function(d){ return -20 + i*30}) 
+                .style("fill", function(d){ return color(pColor[i])})
+
+                svg
+                .append("text")
+                .attr("x", width+45)
+                .attr("y", function(d){ return -10+i*30}) 
+                .text(function(d){ return pColor[i]})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "right")
+            }
+            
+            svg.append("text")
+            .attr("x", width/2)
+            .attr("y", -20)
+            .text(function(d){ return "CIRCLS Community Mapping"})
+            .attr("text-anchor", "middle")
+            .attr("font-size", "25")
+            .attr("font-weight", "bold")
+
+
             function text(text) {
                 text.attr("x", function (d) {
                     return x(d.x) + 6;
@@ -420,7 +365,24 @@ while(i<data3.length){
                         return y(d.y1) - y(d.y0);
                     })
                     .attr("fill", function (d) {
-                        return '#bbbbbb';
+                        //console.log(d)
+                        ppp = d.data.name
+                        if(pColor.includes(ppp))
+                           return color(ppp)
+                        else if (pColor.includes(d.parent.data.name)){
+                            return color(d.parent.data.name)
+                        }
+                        else{
+                            return color(d.parent.parent.data.name)
+                        }                             
+                    })
+                    .attr("opacity", function (d) {
+                        // actors level somehow looks darker although same opacity
+                        // so I'm turning it down a tick here
+                        if(d.depth==3){
+                            return 0.65
+                        }
+                           return 0.8                            
                     });
             }
             function foreign(foreign) { /* added */
@@ -441,14 +403,14 @@ while(i<data3.length){
             function name(d) {
                 return breadcrumbs(d) +
                     (d.parent
-                    ? " -  Click to zoom out"
-                    : " - Click inside square to zoom in");
+                    ? " - Click here to zoom out"
+                    : " - Click inside block to zoom in");
             }
             function breadcrumbs(d) {
                 var res = "";
-                var sep = " > ";
+                var sep = " >> ";
                 d.ancestors().reverse().forEach(function(i){
-                    res += i.data.MappedExpertise + sep;
+                    res += i.data.name + sep;
                 });
                 return res
                     .split(sep)
@@ -457,6 +419,8 @@ while(i<data3.length){
                     })
                     .join(sep);
             }
-        })
+            })
     });
+
+    
     </script>
