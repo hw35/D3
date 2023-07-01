@@ -1,0 +1,3260 @@
+ {
+  "name": "Expertise",
+  "children": [
+   {
+    "name": "Analytics",
+    "children": [
+     {
+      "name": "Learning analytics",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Stephen Looney",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Pengbo Chu",
+        "organization": "Board of Regents, NSHE, obo University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Jung Hyup Kim",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Jeremy Jarzembak",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Kilchan Choi",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Nigel Bosch",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Xiaojin Zhu",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Leping Liu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Li-Ting Chen",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Jiebo Luo",
+        "organization": "University of Rochester",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Multimodal data analysis",
+      "children": [
+       {
+        "name": "Jacob Whitehill",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Martina Rau",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Leslie Neely",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Computer vision",
+      "children": [
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Data mining",
+      "children": [
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Meng Jiang",
+        "organization": "University of Notre Dame",
+        "value": 1
+       },
+       {
+        "name": "Gregory Chung",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Martina Rau",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Danielle Oprean",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Jiebo Luo",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Ken Koedinger",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Data visualization representations and dashboards",
+      "children": [
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Nicoletta Adamo-Villani",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Lydia Chilton",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Martina Rau",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Melissa Malzkuhn",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Bedrich Benes",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Francis Quek",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Graphics",
+      "children": [
+       {
+        "name": "Devin Harris",
+        "organization": "University of Virginia Main Campus",
+        "value": 1
+       },
+       {
+        "name": "Robert LiKamWa",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Pengbo Chu",
+        "organization": "Board of Regents, NSHE, obo University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Bedrich Benes",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Roxanne Moore",
+        "organization": "Georgia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Behavior analysis",
+      "children": [
+       {
+        "name": "Xiaojin Zhu",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Learning Environments and Platforms",
+    "children": [
+     {
+      "name": "Narrative and simulated environments",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Wei Yan",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Jean Oh",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Augmented/virtual/mixed reality",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Fatma Baytar",
+        "organization": "Cornell University",
+        "value": 1
+       },
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Wei Yan",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Zachary Alstad",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Robert LiKamWa",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Shuchisnigdha Deb",
+        "organization": "University of Texas at Arlington",
+        "value": 1
+       },
+       {
+        "name": "Mina Johnson-Glenberg",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Dominic Kao",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Christos Mousas",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Danielle Oprean",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Games and game making",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Mubbasir Kapadia",
+        "organization": "Rutgers University New Brunswick",
+        "value": 1
+       },
+       {
+        "name": "Eleanor O'Rourke",
+        "organization": "Northwestern University",
+        "value": 1
+       },
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Vincent Aleven",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Gregory Chung",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Dominic Kao",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Jodi Asbell-Clarke",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Bruce McLaren",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Danielle Oprean",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Smart & connected communities for learning",
+      "children": [
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Bradford Campbell",
+        "organization": "University of Virginia",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Interactive Displays",
+      "children": [
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Michael Horn",
+        "organization": "Northwestern University",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mobile learning",
+      "children": [
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "MOOCs",
+      "children": [
+       {
+        "name": "Ross Higashi",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Wearable / physiological technology",
+      "children": [
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Matthew Anderson",
+        "organization": "San Diego State University Foundation",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Lining Yao",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Bradford Campbell",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Rebecca Vieyra",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Online learning",
+      "children": [
+       {
+        "name": "Richard Mayer",
+        "organization": "University of California-Santa Barbara",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Li-Ting Chen",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Virtual and remote laboratories / field trips",
+      "children": [
+       {
+        "name": "Jeremy Jarzembak",
+        "organization": "Kent State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Informal settings",
+      "children": [
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Phyllis Newbill",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Formal classroom settings",
+      "children": [
+       {
+        "name": "Lindsay Clare Matsumura",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "AI Approaches and Technologies",
+    "children": [
+     {
+      "name": "Modeling and simulation (including agent-based modeling)",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Mubbasir Kapadia",
+        "organization": "Rutgers University New Brunswick",
+        "value": 1
+       },
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Shiting Lan",
+        "organization": "University of Massachusetts Amherst",
+        "value": 1
+       },
+       {
+        "name": "Wei Yan",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Peter Clarke",
+        "organization": "Florida International University",
+        "value": 1
+       },
+       {
+        "name": "Kilchan Choi",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Eliana Colunga",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "AI",
+      "children": [
+       {
+        "name": "Rogelio Cardona-Rivera",
+        "organization": "University of Utah",
+        "value": 1
+       },
+       {
+        "name": "Mubbasir Kapadia",
+        "organization": "Rutgers University New Brunswick",
+        "value": 1
+       },
+       {
+        "name": "Dinadayalane Tandabany",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Shiting Lan",
+        "organization": "University of Massachusetts Amherst",
+        "value": 1
+       },
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Mark Riedl",
+        "organization": "Georgia Tech Research Corporation",
+        "value": 1
+       },
+       {
+        "name": "Wei Yan",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Diane Litman",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Lydia Chilton",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Wei Wang",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Jean Oh",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Jiebo Luo",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Ken Koedinger",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Pedagogical agents",
+      "children": [
+       {
+        "name": "Mubbasir Kapadia",
+        "organization": "Rutgers University New Brunswick",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Nicoletta Adamo-Villani",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Matthew Stone",
+        "organization": "Rutgers University",
+        "value": 1
+       },
+       {
+        "name": "Melissa Malzkuhn",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Keenan Crane",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Christos Mousas",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Adaptive/Personalized learning and intelligent tutors",
+      "children": [
+       {
+        "name": "Mubbasir Kapadia",
+        "organization": "Rutgers University New Brunswick",
+        "value": 1
+       },
+       {
+        "name": "Jacob Whitehill",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Shiting Lan",
+        "organization": "University of Massachusetts Amherst",
+        "value": 1
+       },
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Vincent Aleven",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Martina Rau",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Bruce McLaren",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Ken Koedinger",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Natural language processing and speech technologies",
+      "children": [
+       {
+        "name": "Stephen Looney",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Okim Kang",
+        "organization": "Northern Arizona University",
+        "value": 1
+       },
+       {
+        "name": "John H. L. Hansen",
+        "organization": "University of Texas at Dallas",
+        "value": 1
+       },
+       {
+        "name": "Meng Jiang",
+        "organization": "University of Notre Dame",
+        "value": 1
+       },
+       {
+        "name": "Mari Ostendorf",
+        "organization": "University of Washington",
+        "value": 1
+       },
+       {
+        "name": "Abeer Alwan",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Diane Litman",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Katharina Kann",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Evgeny Chukharev-Hudilainen",
+        "organization": "Iowa State University",
+        "value": 1
+       },
+       {
+        "name": "Matthew Stone",
+        "organization": "Rutgers University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Machine learning",
+      "children": [
+       {
+        "name": "Jacob Whitehill",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Dinadayalane Tandabany",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Mark Riedl",
+        "organization": "Georgia Tech Research Corporation",
+        "value": 1
+       },
+       {
+        "name": "Wei Yan",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Katharina Kann",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Pengbo Chu",
+        "organization": "Board of Regents, NSHE, obo University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Peter Clarke",
+        "organization": "Florida International University",
+        "value": 1
+       },
+       {
+        "name": "Jivko Sinapov",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Kilchan Choi",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Anirban Roy",
+        "organization": "SRI International",
+        "value": 1
+       },
+       {
+        "name": "Lindsay Clare Matsumura",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Carl Vondrick",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Xiaojin Zhu",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Jiebo Luo",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Dezhen Song",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Computer vision technologies",
+      "children": [
+       {
+        "name": "Jacob Whitehill",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Robert LiKamWa",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Jean Oh",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Francis Quek",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Anirban Roy",
+        "organization": "SRI International",
+        "value": 1
+       },
+       {
+        "name": "Carl Vondrick",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Dezhen Song",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "AI knowledge representation and reasoning",
+      "children": [
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Matthew Stone",
+        "organization": "Rutgers University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Robots",
+      "children": [
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Cross",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Jean Oh",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Jivko Sinapov",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Steven Coxon",
+        "organization": "Maryville University",
+        "value": 1
+       },
+       {
+        "name": "Dezhen Song",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Ethical AI",
+      "children": [
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Mark Riedl",
+        "organization": "Georgia Tech Research Corporation",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Bias and equity in AI",
+      "children": [
+       {
+        "name": "Mark Riedl",
+        "organization": "Georgia Tech Research Corporation",
+        "value": 1
+       },
+       {
+        "name": "Nigel Bosch",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Disciplinary Areas",
+    "children": [
+     {
+      "name": "Engineering education",
+      "children": [
+       {
+        "name": "Fatma Baytar",
+        "organization": "Cornell University",
+        "value": 1
+       },
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Claire Christensen",
+        "organization": "SRI International",
+        "value": 1
+       },
+       {
+        "name": "Devin Harris",
+        "organization": "University of Virginia Main Campus",
+        "value": 1
+       },
+       {
+        "name": "Meltem Alemdar",
+        "organization": "Georgia Tech",
+        "value": 1
+       },
+       {
+        "name": "Daniel O'Brien",
+        "organization": "Georgetown University",
+        "value": 1
+       },
+       {
+        "name": "Ying Yang",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Michael Daley",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Heather Burte",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Computer science education",
+      "children": [
+       {
+        "name": "Eleanor O'Rourke",
+        "organization": "Northwestern University",
+        "value": 1
+       },
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Peter Clarke",
+        "organization": "Florida International University",
+        "value": 1
+       },
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Tamar Fuhrmann",
+        "organization": "Columbia University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Literacy (e.g. reading/reading comprehension writing language learning)",
+      "children": [
+       {
+        "name": "Okim Kang",
+        "organization": "Northern Arizona University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Data science education",
+      "children": [
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Science education",
+      "children": [
+       {
+        "name": "Colleen Megowan-Romanowicz",
+        "organization": "American Modeling Teachers Association",
+        "value": 1
+       },
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Emily Moore",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Claire Christensen",
+        "organization": "SRI International",
+        "value": 1
+       },
+       {
+        "name": "Joseph Polman",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Issifu Harruna",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Conrad Ingram",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Xinle Li",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Meltem Alemdar",
+        "organization": "Georgia Tech",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Chiu",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Danielle Oprean",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Daniel O'Brien",
+        "organization": "Georgetown University",
+        "value": 1
+       },
+       {
+        "name": "Michael Daley",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Heather Burte",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Math education",
+      "children": [
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Claire Christensen",
+        "organization": "SRI International",
+        "value": 1
+       },
+       {
+        "name": "Erin Ottmar",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Anjan Biswas",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Stacy Shaw",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Meltem Alemdar",
+        "organization": "Georgia Tech",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Janet Bowers",
+        "organization": "San Diego State University",
+        "value": 1
+       },
+       {
+        "name": "Raffaella Borasi",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Michael Daley",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Heather Burte",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Computational thinking",
+      "children": [
+       {
+        "name": "Ross Higashi",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Jodi Asbell-Clarke",
+        "organization": "TERC Inc",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Robotics education",
+      "children": [
+       {
+        "name": "Ross Higashi",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "ELA education",
+      "children": [
+       {
+        "name": "Julie Washington",
+        "organization": "University of California-Irvine",
+        "value": 1
+       },
+       {
+        "name": "Elaine Wang",
+        "organization": "Rand Corporation",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Eliana Colunga",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Kathy Ewoldt",
+        "organization": "University of Texas, San Antonio",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Social sciences education",
+      "children": [
+       {
+        "name": "Joseph Polman",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Research Methods",
+    "children": [
+     {
+      "name": "HCI",
+      "children": [
+       {
+        "name": "Fatma Baytar",
+        "organization": "Cornell University",
+        "value": 1
+       },
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Eleanor O'Rourke",
+        "organization": "Northwestern University",
+        "value": 1
+       },
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Sang Won Lee",
+        "organization": "Virginia Polytechnic Institute and State University",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Michael Horn",
+        "organization": "Northwestern University",
+        "value": 1
+       },
+       {
+        "name": "Diane Litman",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Nicoletta Adamo-Villani",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Shuchisnigdha Deb",
+        "organization": "University of Texas at Arlington",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Dominic Kao",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Lining Yao",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Francis Quek",
+        "organization": "Texas A&M University",
+        "value": 1
+       },
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Christos Mousas",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Eliana Colunga",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Nigel Bosch",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Byron Lahey",
+        "organization": "Arizona State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Design-based research (DBR)",
+      "children": [
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Scenario-based design",
+      "children": [
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Experimental Design",
+      "children": [
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Human-AI Interaction",
+      "children": [
+       {
+        "name": "Shiting Lan",
+        "organization": "University of Massachusetts Amherst",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Cross",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Shuchisnigdha Deb",
+        "organization": "University of Texas at Arlington",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Jung Hyup Kim",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Jean Oh",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Jivko Sinapov",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Byron Lahey",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Design Research",
+      "children": [
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Lydia Chilton",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Lining Yao",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Panagiotis Apostolellis",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mixed methods",
+      "children": [
+       {
+        "name": "Jennifer Cross",
+        "organization": "Tufts University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Crowdsourcing",
+      "children": [
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Qualitative methods",
+      "children": [
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Lindsay Clare Matsumura",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Quantitative methods",
+      "children": [
+       {
+        "name": "Alina Reznitskaya",
+        "organization": "Montclair State University",
+        "value": 1
+       },
+       {
+        "name": "Amanda Olsen",
+        "organization": "University of Texas at Arlington",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Survey measures",
+      "children": [
+       {
+        "name": "Gerald Knezek",
+        "organization": "University of North Texas",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Survey measure",
+      "children": [
+       {
+        "name": "Jeff Rosen",
+        "organization": "RTI International",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Learning Engineering",
+      "children": [
+       {
+        "name": "Ken Koedinger",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Other Domains",
+    "children": [
+     {
+      "name": "Material science",
+      "children": [
+       {
+        "name": "Fatma Baytar",
+        "organization": "Cornell University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Computing technology",
+      "children": [
+       {
+        "name": "Fatma Baytar",
+        "organization": "Cornell University",
+        "value": 1
+       },
+       {
+        "name": "Dinadayalane Tandabany",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Robert LiKamWa",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Lydia Chilton",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Dong Wang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Wei Wang",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Nanotechnology",
+      "children": [
+       {
+        "name": "Dinadayalane Tandabany",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Chemistry",
+      "children": [
+       {
+        "name": "Dinadayalane Tandabany",
+        "organization": "Clark Atlanta University",
+        "value": 1
+       },
+       {
+        "name": "Pengbo Chu",
+        "organization": "Board of Regents, NSHE, obo University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mathematics",
+      "children": [
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Physics",
+      "children": [
+       {
+        "name": "Salam Khan",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Content security",
+      "children": [
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Brain function",
+      "children": [
+       {
+        "name": "Qi Wang",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Robin Morris",
+        "organization": "Georgia State University Research Foundation, Inc.",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Software engineering",
+      "children": [
+       {
+        "name": "Rhonda Christensen",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Wei Wang",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Peter Clarke",
+        "organization": "Florida International University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Stacy Shaw",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Gerald Knezek",
+        "organization": "University of North Texas",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Chrystian Vieyra",
+        "organization": "Vieryra Software",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Manufacturing",
+      "children": [
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Autonomous technology",
+      "children": [
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Programming",
+      "children": [
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Sang Won Lee",
+        "organization": "Virginia Polytechnic Institute and State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Medicine",
+      "children": [
+       {
+        "name": "Robin Morris",
+        "organization": "Georgia State University Research Foundation, Inc.",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Spoken language",
+      "children": [
+       {
+        "name": "Diane Litman",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Evgeny Chukharev-Hudilainen",
+        "organization": "Iowa State University",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Enthnographic methods",
+      "children": [
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mineral processing",
+      "children": [
+       {
+        "name": "Pengbo Chu",
+        "organization": "Board of Regents, NSHE, obo University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Environmental Science",
+      "children": [
+       {
+        "name": "Jacob Oluwoye",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Daniel O'Brien",
+        "organization": "Georgetown University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Physcial Sciences",
+      "children": [
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Philosophy",
+      "children": [
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Anthropology",
+      "children": [
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Neuroscience and analytics",
+      "children": [
+       {
+        "name": "Richard Gerkin",
+        "organization": "Arizona State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Physiological sciences",
+      "children": [
+       {
+        "name": "Richard Gerkin",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Christy Spackman",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Energy",
+      "children": [
+       {
+        "name": "Daniel O'Brien",
+        "organization": "Georgetown University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Health",
+      "children": [
+       {
+        "name": "Li-Ting Chen",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mathematical sciences",
+      "children": [
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Learning Processes and Theories",
+    "children": [
+     {
+      "name": "Self-regulation reflection and metacognition",
+      "children": [
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Jung Hyup Kim",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Dustin Thoman",
+        "organization": "San Diego State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Collaborative and/or participatory learning",
+      "children": [
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Qi Wang",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Sang Won Lee",
+        "organization": "Virginia Polytechnic Institute and State University",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Dustin Thoman",
+        "organization": "San Diego State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Neuroscience",
+      "children": [
+       {
+        "name": "Lorna Quandt",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Robin Morris",
+        "organization": "Georgia State University Research Foundation, Inc.",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Richard Gerkin",
+        "organization": "Arizona State University",
+        "value": 1
+       },
+       {
+        "name": "Sergiu Dascalu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Embodied learning and cognition",
+      "children": [
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Byron Lahey",
+        "organization": "Arizona State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Cognitive psychology / Cognitive science",
+      "children": [
+       {
+        "name": "Neil Heffernan",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Qi Wang",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Cristina Heffernan",
+        "organization": "ASSISTMENTS FOUNDATION, INC.",
+        "value": 1
+       },
+       {
+        "name": "Richard Mayer",
+        "organization": "University of California-Santa Barbara",
+        "value": 1
+       },
+       {
+        "name": "Erin Ottmar",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Evgeny Chukharev-Hudilainen",
+        "organization": "Iowa State University",
+        "value": 1
+       },
+       {
+        "name": "Alina Reznitskaya",
+        "organization": "Montclair State University",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Eliana Colunga",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Heather Burte",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Creativity",
+      "children": [
+       {
+        "name": "Sang Won Lee",
+        "organization": "Virginia Polytechnic Institute and State University",
+        "value": 1
+       },
+       {
+        "name": "Erin Ottmar",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Lydia Chilton",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Melissa Malzkuhn",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Stacy Shaw",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Chris Rogers",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Steven Coxon",
+        "organization": "Maryville University",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Media use",
+      "children": [
+       {
+        "name": "Richard Mayer",
+        "organization": "University of California-Santa Barbara",
+        "value": 1
+       },
+       {
+        "name": "Jiebo Luo",
+        "organization": "University of Rochester",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Social emotional learning",
+      "children": [
+       {
+        "name": "Erin Ottmar",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Jeff Rosen",
+        "organization": "RTI International",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Multimodal communication",
+      "children": [
+       {
+        "name": "Jivko Sinapov",
+        "organization": "Tufts University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Identity",
+      "children": [
+       {
+        "name": "Dustin Thoman",
+        "organization": "San Diego State University",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Equity and Social Justice",
+    "children": [
+     {
+      "name": "Cultural competence/responsiveness",
+      "children": [
+       {
+        "name": "Marcela Borge",
+        "organization": "Pennsylvania State Univ University Park",
+        "value": 1
+       },
+       {
+        "name": "Qi Wang",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Julie Washington",
+        "organization": "University of California-Irvine",
+        "value": 1
+       },
+       {
+        "name": "Martina Rau",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       },
+       {
+        "name": "Elisa Shernoff",
+        "organization": "Rutgers University",
+        "value": 1
+       },
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Michael Zang",
+        "organization": "McGaw YMCA MetaMedia",
+        "value": 1
+       },
+       {
+        "name": "Andrea Hillsamer",
+        "organization": "McGaw YMCA MetaMedia",
+        "value": 1
+       },
+       {
+        "name": "Tamar Fuhrmann",
+        "organization": "Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Critical theory and identity",
+      "children": [
+       {
+        "name": "Melissa Tehee",
+        "organization": "Utah State University",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Community partnerships",
+      "children": [
+       {
+        "name": "Melissa Tehee",
+        "organization": "Utah State University",
+        "value": 1
+       },
+       {
+        "name": "Dustin Thoman",
+        "organization": "San Diego State University",
+        "value": 1
+       },
+       {
+        "name": "Tamar Fuhrmann",
+        "organization": "Columbia University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Mental health",
+      "children": [
+       {
+        "name": "John H. L. Hansen",
+        "organization": "University of Texas at Dallas",
+        "value": 1
+       },
+       {
+        "name": "Stacy Shaw",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Leping Liu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Accessibility and technology",
+      "children": [
+       {
+        "name": "Lorna Quandt",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Nikolas Martelaro",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Emily Moore",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Zhen Bai",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Lawrence Angrave",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Kathy Ewoldt",
+        "organization": "University of Texas, San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Myounghoon Jeon",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Social welfare development and responsibility",
+      "children": [
+       {
+        "name": "Qi Wang",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Joshua Sunshine",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Yun Huang",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Erin Ottmar",
+        "organization": "Worcester Polytechnic Institute",
+        "value": 1
+       },
+       {
+        "name": "Kenneth Holstein",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Dustin Thoman",
+        "organization": "San Diego State University",
+        "value": 1
+       },
+       {
+        "name": "Xiaojin Zhu",
+        "organization": "University of Wisconsin-Madison",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Broadening participation of historically marginalized groups",
+      "children": [
+       {
+        "name": "Jennifer Cross",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Julie Washington",
+        "organization": "University of California-Irvine",
+        "value": 1
+       },
+       {
+        "name": "Elisa Shernoff",
+        "organization": "Rutgers University",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Christy Spackman",
+        "organization": "Arizona State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Inclusive/universal design",
+      "children": [
+       {
+        "name": "Emily Moore",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Robin Morris",
+        "organization": "Georgia State University Research Foundation, Inc.",
+        "value": 1
+       },
+       {
+        "name": "Lining Yao",
+        "organization": "Carnegie Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Steven Coxon",
+        "organization": "Maryville University",
+        "value": 1
+       },
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Jodi Asbell-Clarke",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Leslie Neely",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Kathy Ewoldt",
+        "organization": "University of Texas, San Antonio",
+        "value": 1
+       },
+       {
+        "name": "Jeff Rosen",
+        "organization": "RTI International",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Ethics",
+      "children": [
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       },
+       {
+        "name": "Tamar Fuhrmann",
+        "organization": "Columbia University",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Instruments, Assessment, and Measures",
+    "children": [
+     {
+      "name": "Cyber-enhanced/Computer-assisted assessments",
+      "children": [
+       {
+        "name": "Okim Kang",
+        "organization": "Northern Arizona University",
+        "value": 1
+       },
+       {
+        "name": "Devin Harris",
+        "organization": "University of Virginia Main Campus",
+        "value": 1
+       },
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       },
+       {
+        "name": "Lindsay Clare Matsumura",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Jodi Asbell-Clarke",
+        "organization": "TERC Inc",
+        "value": 1
+       },
+       {
+        "name": "Li-Ting Chen",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Kathy Ewoldt",
+        "organization": "University of Texas, San Antonio",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Biometrics (e.g. eye-tracking EEG)",
+      "children": [
+       {
+        "name": "Lorna Quandt",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Jung Hyup Kim",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Robert Clements",
+        "organization": "Kent State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Formative assessment",
+      "children": [
+       {
+        "name": "Vitaliy Popov",
+        "organization": "Regents of the University of Michigan - Ann Arbor",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Pedagogical Approaches and Processes",
+    "children": [
+     {
+      "name": "Inquiry learning (e.g. project/problem based learning)",
+      "children": [
+       {
+        "name": "Alejandra Magana-de-Leon",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Joseph Polman",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Paulo Blikstein",
+        "organization": "Teachers College, Columbia University",
+        "value": 1
+       },
+       {
+        "name": "Melissa Malzkuhn",
+        "organization": "Gallaudet University",
+        "value": 1
+       },
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       },
+       {
+        "name": "Ann Eisenberg",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Janet Bowers",
+        "organization": "San Diego State University",
+        "value": 1
+       },
+       {
+        "name": "Christy Spackman",
+        "organization": "Arizona State University",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Capacity Building",
+    "children": [
+     {
+      "name": "Workforce development",
+      "children": [
+       {
+        "name": "Kwangtaek Kim",
+        "organization": "Kent State University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Cross",
+        "organization": "Tufts University",
+        "value": 1
+       },
+       {
+        "name": "Shuchisnigdha Deb",
+        "organization": "University of Texas at Arlington",
+        "value": 1
+       },
+       {
+        "name": "Raffaella Borasi",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Leslie Neely",
+        "organization": "University of Texas at San Antonio",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Instructional Design",
+      "children": [
+       {
+        "name": "Shiting Lan",
+        "organization": "University of Massachusetts Amherst",
+        "value": 1
+       },
+       {
+        "name": "Ross Higashi",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Elaine Wang",
+        "organization": "Rand Corporation",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Meltem Alemdar",
+        "organization": "Georgia Tech",
+        "value": 1
+       },
+       {
+        "name": "Lawrence Angrave",
+        "organization": "University of Illinois at Urbana-Champaign",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Chiu",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Janet Bowers",
+        "organization": "San Diego State University",
+        "value": 1
+       },
+       {
+        "name": "Leping Liu",
+        "organization": "University of Nevada, Reno",
+        "value": 1
+       },
+       {
+        "name": "Philip Yasskin",
+        "organization": "Texas A&M University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Educator professional learning",
+      "children": [
+       {
+        "name": "Ross Higashi",
+        "organization": "Carnegie-Mellon University",
+        "value": 1
+       },
+       {
+        "name": "Elaine Wang",
+        "organization": "Rand Corporation",
+        "value": 1
+       },
+       {
+        "name": "Alina Reznitskaya",
+        "organization": "Montclair State University",
+        "value": 1
+       },
+       {
+        "name": "Lydia Davenport",
+        "organization": "Alabama A&M University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Jeffrey Ogle",
+        "organization": "Regis University",
+        "value": 1
+       },
+       {
+        "name": "Meltem Alemdar",
+        "organization": "Georgia Tech",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Chiu",
+        "organization": "University of Virginia",
+        "value": 1
+       },
+       {
+        "name": "Alison Bailey",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Lindsay Clare Matsumura",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Raffaella Borasi",
+        "organization": "University of Rochester",
+        "value": 1
+       },
+       {
+        "name": "Rebecca Vieyra",
+        "organization": "University of Colorado at Boulder",
+        "value": 1
+       },
+       {
+        "name": "Kangwon Seo",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Chelsea Lyles",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Policy",
+      "children": [
+       {
+        "name": "Elaine Wang",
+        "organization": "Rand Corporation",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       },
+       {
+        "name": "Daniel O'Brien",
+        "organization": "Georgetown University",
+        "value": 1
+       },
+       {
+        "name": "Chelsea Lyles",
+        "organization": "Virginia Tech",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Evaluation",
+      "children": [
+       {
+        "name": "Elaine Wang",
+        "organization": "Rand Corporation",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Kilchan Choi",
+        "organization": "University of California-Los Angeles",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Research partnerships",
+      "children": [
+       {
+        "name": "Jung Hyup Kim",
+        "organization": "University of Missouri-Columbia",
+        "value": 1
+       },
+       {
+        "name": "Richard Correnti",
+        "organization": "University of Pittsburgh",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Pedagogy",
+      "children": [
+       {
+        "name": "Alina Reznitskaya",
+        "organization": "Montclair State University",
+        "value": 1
+       },
+       {
+        "name": "Jennifer Richardson",
+        "organization": "Purdue University",
+        "value": 1
+       },
+       {
+        "name": "Janet Bowers",
+        "organization": "San Diego State University",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "name": "Instructional design",
+      "children": [
+       {
+        "name": "Ibrahim Dahlstrom-Hakki",
+        "organization": "TERC Inc",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }

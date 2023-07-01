@@ -1,57 +1,44 @@
 <meta charset="utf-8">
 
 <style>
-    
 	#chart {
-	  width: 60%;
-      height:100%;
+	  max-width: 100%;
+      max-height:100%;
 	  overflow:auto;
 	}
-    #legend {
-    width: 100%;
-    height: 20px;
-    margin: 25px auto;
-    position: relative;
-    margin-left: 70%;
-    float: center;
-    text-align: center;
-}
 	text {
 	  pointer-events: none;
 	}
 	.grandparent text {
 	  font-weight: bold;
-      font-size: 20px;
 	}
 	rect {
 	  stroke: #fff;
 	  stroke-width: 1px;
 	}
 	rect.parent,
-	/* .grandparent rect {
+	.grandparent rect {
 	  stroke-width: 3px;
-	} */
-    .grandparent rect {
-	  stroke: #000000;
-      stroke-width: 3px;
-      fill:none
-	} 
+	}
+	.grandparent:hover rect {
+	  fill: grey;
+	}
 	.children rect.parent,
 	.grandparent rect {
 	  cursor: pointer;
 	}
-	/* .children rect.child {
+	.children rect.child {
 	  opacity: 0;
-	} */
-	/* .children rect.parent {
-	} */
-	rect.child {
-	  opacity: 0.7;
+	}
+	.children rect.parent {
+	}
+	/* .children:hover rect.child {
+	  opacity: 1;
 	  stroke-width: 1px;
-	}
-	rect.parent {
+	} */
+	/* .children:hover rect.parent {
 	  opacity: 0;
-	}
+	} */
 	.legend {
 	  margin-bottom:8px !important;
 	}
@@ -69,23 +56,23 @@
 	    text-align:left;
 	}
 	.textdiv {
-	    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 	    font-size: 14px;
 	    padding: 10px;
 	    cursor: pointer;
 	    overflow:none;
 	}
 	.textdiv .title {
-	    font-size: 102%;
+	    font-size: 100%;
 	    font-weight: bold;
 	    margin-top: 8px;
-	    font-size:15px !important;
+	    font-size:17px !important;
 	}
 	.textdiv p{
 	    line-height: 13px;
-	    margin:0 0 4px !important;
+        font-weight: bold;
+	    margin:0 0 10px !important;
 	    padding:0px;
-	    font-size:10px !important;
+	    font-size:15px !important;
 	}
 </style>
 
@@ -105,9 +92,9 @@
         var el_id = 'chart';
         var obj = document.getElementById(el_id);
         var divWidth = obj.offsetWidth;
-        var margin = {top: 30, right: 0, bottom: 20, left: 0},
-            width = divWidth -25,
-            height = 600 - margin.top - margin.bottom,
+        var margin = {top: 30, right: 30, bottom: 20, left: 30},
+            width = divWidth -30,
+            height = 800 - margin.top - margin.bottom,
             formatNumber = d3.format(","),
             transitioning;
         // sets x and y scale to determine size of visible boxes
@@ -140,10 +127,10 @@
                 .attr("x", 6)
                 .attr("y", 6 - margin.top)
                 .attr("dy", ".75em");
-        d3.json("makeTree2.json", function(data) {
+        d3.json("makeTree3.json", function(data) {
             d3.csv('Apr 28 Expertise Tagv2.csv', function(data2) {
             let pColor = [];
-            for(let l=0; l<12;l++){
+            for(let l=1; l<12;l++){
                 pColor[l]=data2[l].MappedExpertise;
             }
             var color = d3.scaleOrdinal()
@@ -156,7 +143,7 @@
             console.log(root);
             treemap(root
                 .sum(function (d) {
-                    return d.value;
+                        return d.value;                    
                 })
                 .sort(function (a, b) {
                     return b.height - a.height || b.value - a.value
@@ -213,12 +200,19 @@
                     .call(rect)
                     .attr("class", "foreignobj")
                     .append("xhtml:div")
-                    .attr("dy", ".75em")
+                    .attr("dy", "1em")
                     .html(function (d) {
-                        return '' +
+                        if(d.depth==3){
+                            return '' +
                             '<p class="title"> ' + d.data.name + '</p>' +
-                            '<p>' + formatNumber(d.value) + '</p>'
-                        ;
+                            '<p>'+ d.data.organization+'<p>'
+                        }
+                        else{
+                            return '' +
+                            '<p class="title"> ' + d.data.name + '</p>'+
+                            '<p>' + formatNumber(d.value) + '</p>';
+                        }
+                            
                     })
                     .attr("class", "textdiv"); //textdiv class allows us to style the text easily with CSS
                 function transition(d) {
@@ -270,7 +264,6 @@
                         return y(d.y) + 6;
                     });
             }
-            
             function rect(rect) {
                 rect
                     .attr("x", function (d) {
@@ -286,8 +279,19 @@
                         return y(d.y1) - y(d.y0);
                     })
                     .attr("fill", function (d) {
-                        //console.log(d.parent)
-                        return color(d.parent.data.name);
+                        //console.log(d)
+                        ppp = d.data.name
+                        if(pColor.includes(ppp))
+                           return color(ppp)
+                        else if (pColor.includes(d.parent.data.name)){
+                            return color(d.parent.data.name)
+                        }
+                        else{
+                            return color(d.parent.parent.data.name)
+                        }                             
+                    })
+                    .attr("opacity", function (d) {
+                           return 0.8                            
                     });
             }
             function foreign(foreign) { /* added */
@@ -308,8 +312,8 @@
             function name(d) {
                 return breadcrumbs(d) +
                     (d.parent
-                    ? " -  Click to zoom out"
-                    : " - Click inside square to zoom in");
+                    ? " -  Click here to zoom out"
+                    : " - Click inside block to zoom in");
             }
             function breadcrumbs(d) {
                 var res = "";
