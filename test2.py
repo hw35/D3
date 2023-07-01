@@ -4,12 +4,14 @@ import json
 # helper to create dict of dict of .. of values
 def add_leaf(tree, row):
     key = row[0]
+    #print(key)
+    #print(row[1:])
     if len(row) > 2:
         if not key in tree:
             tree[key] = {}
         add_leaf(tree[key], row[1:])
     if len(row) == 2:
-            tree[key] = row[-1]
+            tree[key] = row[1]
 
 # transforms helper structure to final structure
 def transform_tree(tree):
@@ -19,15 +21,15 @@ def transform_tree(tree):
         if isinstance(val, dict):
             res.append({
                 "name": key,
-                #"shortName": key,
-                #"size":val,
+                #"size": val,
+                "size":val,
+                "children": transform_tree(val),
                 })
         else:
             res.append({
                 "name": key,
-                "size":val,
                 #"shortName": key,
-                "children": transform_tree(val),
+                #"children": transform_tree(val),
                 })
     return res
 def main():
