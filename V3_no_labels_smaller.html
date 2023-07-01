@@ -1,0 +1,264 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+<style>
+#legend svg {
+      height: 500px; 
+   }
+</style>
+<div id="legend"></div>
+<script>
+
+// Dimension of display ---------------------------------------------------
+var margin = {top: 30, right: 500, bottom: 10, left: 10},
+  width = 1600 - margin.left - margin.right,
+  height = 800 - margin.top - margin.bottom;
+
+// Set svg properties -----------------------------------------------------
+var svg = d3.select("#my_dataviz")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .attr('id','treemap')
+.append("g")
+  .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+
+// Read data --------------------------------------------------------------
+d3.csv('RETTLdata.csv', function(data1) {
+   d3.csv('Apr 28 Expertise Tagv2.csv', function(data2) {
+     console.log(data1);
+     console.log(data2);
+
+var dict = {};    // maps MappedExpertise to its Count
+let expArray=[];  // has all MappedExpertises
+
+expArray = data1.map(item=> item.MappedExpertise);
+
+// Fill in dictionary -----------------------------------------------------
+let i = 0;
+while(i<expArray.length){
+  var tempArr = String(expArray[i]).split(",");
+  let j =0;
+  while(j<tempArr.length){
+    var cur = tempArr[j];
+    cur=cur.trim();
+    if(cur.includes(" ")){
+      
+      let first = cur.split(" ").shift();
+      let rest = cur.substring(first.length).toLowerCase();
+      cur = first + rest;
+      
+    }
+    if(!(cur in dict)){
+      dict[cur]=1;
+    }
+    else{
+      dict[cur] +=1;
+    }
+    j++;
+  }
+  i++;
+}
+
+// Append Count from dict to data2 "Count" column -------------------------
+let mappedExpArr=[Object.keys(dict).length]
+let k = 12;
+while(k<data2.length){
+  var curExp = data2[k].MappedExpertise;
+  data2[k].Count=dict[curExp];
+  k+=1;
+}
+
+// stratify ---------------------------------------------------------------
+const root = d3.stratify()
+  .id(function(d) { return d.MappedExpertise; })
+  .parentId(function(d) { return d.Parent; })
+  (data2);
+  root.sum(function(d) { return d.Count })
+
+// Color scale for Expertise (Parent) --------------------------------------
+let parentName = [];
+for(let l=0; l<12;l++){
+  parentName[l]=data2[l].MappedExpertise;
+}
+var color = d3.scaleOrdinal()
+.domain(parentName)
+.range([ "#FF0000", "#FF5300", "#FFA500","#FFD200",
+"#808080","#80C000","#008000","#004080","#0000FF","#2600C1","#4B0082"])
+var opacity = d3.scaleLinear()
+  .domain([10, 30])
+  .range([.5,1])
+
+// tooltip properties -----------------------------------------------------
+// tooltip list
+const tooltip = d3.select('body')
+                .append('div')
+                .style('position', 'relative')
+                .style('z-index', '10')
+                .style('background-color','white')
+                .style('border', 'solid')
+                .style('border-width', '2px')
+                .style('border-radius', '5px')
+                .style('padding', '5px')
+                .attr('id', 'tooltip')
+                .style('width','300px');
+// tooltip on mouse
+const Tooltip = d3.select('body')
+                  .append('div')
+                  .style('position', 'absolute')
+                  .style('z-index', '10')
+                  .style('background-color','white')
+                  .style('border', 'solid')
+                  .style('border-width', '2px')
+                  .style('border-radius', '5px')
+                  .style('padding', '5px')
+                .attr('id', 'Tooltip');
+
+// Create treemap ---------------------------------------------------------
+const treemap = d3.treemap()
+  .size([width, height])
+  .paddingTop(28)
+  .paddingRight(7)
+  .paddingInner(3);
+
+var s = treemap(root);
+console.log(root)
+console.log(root.leaves()[0].parent.children.length)
+
+// Display cells of treemap ------------------------------------------------
+const cell = svg.selectAll("g")
+  .data(root.leaves())
+  .enter()
+  .append("g")
+  .attr('transform', d => `translate(${d.x0},${d.y0})`)
+  
+  // Build Tooltip ----------------------------------------------------------
+  .on('mousemove', d => {
+    tooltip.transition()
+            .duration(200)
+            .style('opacity', 1); 
+    tooltip.attr('count', d.data.Count);
+
+    var a = [] // contains MappedExpertise, Researcher Count
+    for(num=0;num<d.parent.children.length;num++){
+        m= d.parent.children[num].data.MappedExpertise
+        c=d.parent.children[num].data.Count
+        // MappedExpertise with 0 researchers arent displayed
+        if(c!=null){
+            a.push([m,c])
+        }
+        a.sort(compareSecondColumn);
+        function compareSecondColumn(a, b) {
+            if (a[1] === b[1]) {return 0;}
+            else {return (a[1] > b[1]) ? -1 : 1;}
+        }
+    }
+    // Information for Tooltip list on Right Side
+    tooltip.html(
+      "<b>" +d.data.Parent+"</b><br/>"+
+            a.map(e => e.join(", Researchers: ")).join("<br />")
+    )
+    .style('right', -width-45+`px`)
+    .style('top', -height+330+`px`)
+    .attr("data-html","true")
+
+    // Information for tooltip on hover with mouse
+    Tooltip.transition()
+            .duration(200)
+            .style('opacity', 1);
+    Tooltip.attr('count', d.data.Count);
+    Tooltip.html(
+      
+      'Expertise: ' + d.data.MappedExpertise + '<br>' +
+      'Researchers: ' + d.data.Count
+    )
+      .style('top', `${d3.event.pageY + 10}px`)
+      .style('left', `${d3.event.pageX + 8}px`);
+  })
+  .on('mouseout', d => {
+    Tooltip.transition()
+            .duration(200)
+            .style('opacity', 0);
+  });
+
+  // Build rectangles for treemap -------------------------------------------
+  cell
+    .append("rect")
+    .attr('class', 'tile')
+    .attr('id', function(d){return d.data.id})
+    .attr('width', function (d) { 
+      return d.x1 - d.x0; 
+    })
+    .attr('height', function (d) { 
+      return d.y1 - d.y0; 
+    })
+
+    .attr("mapped",function(d){d.data.MappedExpertise})
+    .attr("count",function(d){d.data.Count})
+    .attr("parent",function(d){d.data.Parent})
+    .style("stroke", "black")
+    .style("fill", function(d){ return color(d.data.Parent)} )
+    .style("opacity", 0.7);
+
+  // Big Title --------------------------------------------------------------
+  svg.append("text")
+      .attr("x", width/2)
+      .attr("y", margin.top/2)
+      .text(function(d){ return "CIRCLS Community Mapping"})
+      .attr("text-anchor", "middle")
+      .attr("font-size", "25")
+      .attr("font-weight", "bold")
+
+  // Titles of Expertises ---------------------------------------------------
+  svg.selectAll("titles")
+  .data(root.descendants().filter(function(d){return d.depth==1}))
+  .enter()
+  .append("text")
+    .attr("x", function(d){ return d.x0})
+    .attr("y", function(d){ return d.y0+21})
+    .text(function(d){
+      w=d.x1-d.x0 
+      title = d.data.MappedExpertise
+      // Shorten title if text length > box width
+      if(w<6*title.length){
+        return title.substring(0,w/8)+".."
+      }
+      return d.data.MappedExpertise 
+    })
+    .attr("font-size", "15px")
+    .attr("font-weight", "bold")
+    .style("fill",  function(d){ return } )
+
+  // Legends ----------------------------------------------------------------
+  svg.selectAll("mytext")
+  .data(root.descendants().filter(function(d){return d.depth==1}))
+  .enter()
+  .append("rect")
+    .attr('width',18)
+    .attr('height',18)
+    .attr("x", width+35)
+    .attr("y", function(d,i){ return 50 + i*25})
+    .style("fill", function(d){ return color(d.data.MappedExpertise)})
+
+  svg.selectAll("mylabels")
+  .data(root.descendants().filter(function(d){return d.depth==1}))
+  .enter()
+  .append("text")
+    .attr("x", width+58)
+    .attr("y", function(d,i){ return 63+i*25}) 
+    .text(function(d){ return d.data.MappedExpertise})
+    .attr("text-anchor", "left")
+    .style("alignment-baseline", "right")
+
+  });
+});
+</script>
+

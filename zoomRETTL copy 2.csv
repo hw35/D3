@@ -1,0 +1,658 @@
+Actors,MappedExpertise,Parent,Count,
+Expertise,,,
+AI Approaches and Technologies,Expertise,,
+Analytics,Expertise,,
+Equity and Social Justice,Expertise,,
+Other Domains,Expertise,,
+"Instruments, Assessment, and Measures",Expertise,,
+Disciplinary Areas,Expertise,,
+Learning Processes and Theories,Expertise,,
+Research Methods,Expertise,,
+Capacity Building,Expertise,,
+Learning Environments and Platforms,Expertise,,
+Pedagogical Approaches and Processes,Expertise,,
+AI,AI Approaches and Technologies
+AI knowledge representation and reasoning,AI Approaches and Technologies
+Accessibility and technology,Equity and Social Justice
+Adaptive/Personalized learning and intelligent tutors,AI Approaches and Technologies
+Anthropology,Other Domains
+Augmented/virtual/mixed reality,Learning Environments and Platforms
+Autonomous technology,Other Domains
+Behavior analysis,Analytics
+Bias and equity in AI,AI Approaches and Technologies
+Biometrics (e.g. eye-tracking EEG),"Instruments, Assessment, and Measures"
+Brain function,Other Domains
+Broadening participation of historically marginalized groups,Equity and Social Justice
+Chemistry,Other Domains
+Cognitive psychology / Cognitive science,Learning Processes and Theories
+Collaborative and/or participatory learning,Learning Processes and Theories
+Community partnerships,Equity and Social Justice
+Computational thinking,Disciplinary Areas
+Computer science education,Disciplinary Areas
+Computer vision,Analytics
+Computer vision technologies,AI Approaches and Technologies
+Computing technology,Other Domains
+Content security,Other Domains
+Creativity,Learning Processes and Theories
+Critical theory and identity,Equity and Social Justice
+Crowdsourcing,Research Methods
+Cultural competence/responsiveness,Equity and Social Justice
+Culturally responsive,Equity and Social Justice
+Cyber-enhanced/Computer-assisted assessments,"Instruments, Assessment, and Measures"
+Data mining,Analytics
+Data science education,Disciplinary Areas
+Data visualization representations and dashboards,Analytics
+Design Research,Research Methods
+Design-based research (DBR),Research Methods
+ELA education,Disciplinary Areas
+Educator professional learning,Capacity Building
+Embodied learning and cognition,Learning Processes and Theories
+Energy,Other Domains
+Engineering education,Disciplinary Areas
+Enthnographic methods,Other Domains
+Environmental Science,Other Domains
+Ethical AI,AI Approaches and Technologies
+Ethics,Equity and Social Justice
+Evaluation,Capacity Building
+Experimental Design,Research Methods
+Formal classroom settings,Learning Environments and Platforms
+Formative assessment,"Instruments, Assessment, and Measures"
+Games and game making,Learning Environments and Platforms
+Graphics,Analytics
+HCI,Research Methods
+Health,Other Domains
+Human-AI Interaction,Research Methods
+Identity,Learning Processes and Theories
+Inclusive/universal design,Equity and Social Justice
+Informal settings,Learning Environments and Platforms
+Inquiry learning (e.g. project/problem based learning),Pedagogical Approaches and Processes
+Instructional Design,Capacity Building
+Interactive Displays,Learning Environments and Platforms
+Learning Analytics,Analytics
+Learning Engineering,Research Methods
+Literacy (e.g. reading/reading comprehension writing language learning),Disciplinary Areas
+MOOCs,Learning Environments and Platforms
+Machine learning,AI Approaches and Technologies
+Manufacturing,Other Domains
+Material science,Other Domains
+Math education,Disciplinary Areas
+Mathematical sciences,Other Domains
+Mathematics,Other Domains
+Media use,Learning Processes and Theories
+Medicine,Other Domains
+Mental health,Equity and Social Justice
+Mineral processing,Other Domains
+Mixed Methods,Research Methods
+Mobile learning,Learning Environments and Platforms
+Modeling and simulation (including agent-based modeling),AI Approaches and Technologies
+Modeling and simulation (including agent-based simulation),AI Approaches and Technologies
+Multimodal communication,Learning Processes and Theories
+Multimodal data analysis,Analytics
+Nanotechnology,Other Domains
+Narrative and simulated environments,Learning Environments and Platforms
+Natural language processing and speech technologies,AI Approaches and Technologies
+Neuroscience,Learning Processes and Theories
+Neuroscience and analytics,Other Domains
+Online learning,Learning Environments and Platforms
+Pedagogical agents,AI Approaches and Technologies
+Pedagogy,Capacity Building
+Philosophy,Other Domains
+Physcial Sciences,Other Domains
+Physics,Other Domains
+Physiological sciences,Other Domains
+Policy,Capacity Building
+Programming,Other Domains
+Qualitative Methods,Research Methods
+Quantitative Methods,Research Methods
+Research Partnerships,Capacity Building
+Robotics Education,Disciplinary Areas
+Robots,AI Approaches and Technologies
+Scenario-based design,Research Methods
+Science education,Disciplinary Areas
+Self-regulation reflection and metacognition,Learning Processes and Theories
+Smart & connected communities for learning,Learning Environments and Platforms
+Social emotional learning,Learning Processes and Theories
+Social sciences education,Disciplinary Areas
+Social welfare development and responsibility,Equity and Social Justice
+Software engineering,Other Domains
+Spoken language,Other Domains
+Survey measures,Research Methods
+Virtual and remote laboratories / field trips,Learning Environments and Platforms
+Wearable / physiological technology,Learning Environments and Platforms
+Workforce development,Capacity Building
+Rogelio Cardona-Rivera,Learning analytics
+Rogelio Cardona-Rivera,Narrative and simulated environments
+Rogelio Cardona-Rivera,Modeling and simulation (including agent-based modeling)
+Rogelio Cardona-Rivera,AI
+Rogelio Cardona-Rivera,Augmented/virtual/mixed reality
+Rogelio Cardona-Rivera,Games and game making
+Fatma Baytar,Engineering education
+Fatma Baytar,HCI
+Fatma Baytar,Material science
+Fatma Baytar,Augmented/virtual/mixed reality
+Fatma Baytar,Computing technology
+Marcela Borge,Self-regulation reflection and metacognition
+Marcela Borge,HCI
+Marcela Borge,Cultural competence/responsiveness
+Marcela Borge,Collaborative and/or participatory learning
+Marcela Borge,Design-based research (DBR)
+Marcela Borge,Scenario-based design
+Mubbasir Kapadia,Modeling and simulation (including agent-based modeling)
+Mubbasir Kapadia,AI
+Mubbasir Kapadia,Pedagogical agents
+Mubbasir Kapadia,Games and game making
+Mubbasir Kapadia,Adaptive/Personalized learning and intelligent tutors
+Melissa Tehee,Critical theory and identity
+Melissa Tehee,Community partnerships
+Eleanor O'Rourke,HCI
+Eleanor O'Rourke,Computer science education
+Eleanor O'Rourke,Games and game making
+Stephen Looney,Natural language processing and speech technologies
+Stephen Looney,Learning analytics
+Okim Kang,Natural language processing and speech technologies
+Okim Kang,Cyber-enhanced/Computer-assisted assessments
+Okim Kang,Literacy (e.g. reading/reading comprehension writing language learning)
+Jacob Whitehill,Machine learning
+Jacob Whitehill,Computer vision technologies
+Jacob Whitehill,Adaptive/Personalized learning and intelligent tutors
+Jacob Whitehill,Multimodal data analysis
+John H. L. Hansen,Natural language processing and speech technologies
+John H. L. Hansen,Mental health
+Lorna Quandt,Accessibility and technology
+Lorna Quandt,Biometrics (e.g. eye-tracking EEG)
+Lorna Quandt,Neuroscience
+Dinadayalane Tandabany,Nanotechnology
+Dinadayalane Tandabany,Chemistry
+Dinadayalane Tandabany,Machine learning
+Dinadayalane Tandabany,AI
+Dinadayalane Tandabany,Computing technology
+Salam Khan,Learning analytics
+Salam Khan,Computer vision
+Salam Khan,Machine learning
+Salam Khan,Mathematics
+Salam Khan,Physics
+Salam Khan,Modeling and simulation (including agent-based modeling)
+Salam Khan,Experimental Design
+Alejandra Magana-de-Leon,Learning analytics
+Alejandra Magana-de-Leon,Inquiry learning (e.g. project/problem based learning)
+Alejandra Magana-de-Leon,Modeling and simulation (including agent-based modeling)
+Alejandra Magana-de-Leon,AI knowledge representation and reasoning
+Alejandra Magana-de-Leon,AI
+Alejandra Magana-de-Leon,Embodied learning and cognition
+Alejandra Magana-de-Leon,Computer science education
+Alejandra Magana-de-Leon,Data science education
+Colleen Megowan-Romanowicz,Science education
+Kwangtaek Kim,HCI
+Kwangtaek Kim,Accessibility and technology
+Kwangtaek Kim,Robots
+Kwangtaek Kim,Content security
+Kwangtaek Kim,Smart & connected communities for learning
+Kwangtaek Kim,Interactive Displays
+Kwangtaek Kim,Workforce development
+Kwangtaek Kim,Augmented/virtual/mixed reality
+Kwangtaek Kim,Games and game making
+Shiting Lan,Instructional Design
+Shiting Lan,Adaptive/Personalized learning and intelligent tutors
+Shiting Lan,Modeling and simulation (including agent-based modeling)
+Shiting Lan,AI
+Shiting Lan,Human-AI Interaction
+Neil Heffernan,HCI
+Neil Heffernan,AI
+Neil Heffernan,Data mining
+Neil Heffernan,Math education
+Neil Heffernan,Cognitive psychology / Cognitive science
+Neil Heffernan,Adaptive/Personalized learning and intelligent tutors
+Qi Wang,Social welfare development and responsibility
+Qi Wang,Brain function
+Qi Wang,Collaborative and/or participatory learning
+Qi Wang,Cognitive psychology / Cognitive science
+Qi Wang,Cultural competence/responsiveness
+Rhonda Christensen,Narrative and simulated environments
+Rhonda Christensen,Science education
+Rhonda Christensen,Math education
+Rhonda Christensen,Engineering education
+Rhonda Christensen,Software engineering
+Rhonda Christensen,Mobile learning
+Ross Higashi,Instructional Design
+Ross Higashi,Educator professional learning
+Ross Higashi,Computational thinking
+Ross Higashi,MOOCs
+Ross Higashi,Robotics education
+Cristina Heffernan,HCI
+Cristina Heffernan,AI
+Cristina Heffernan,Data mining
+Cristina Heffernan,Math education
+Cristina Heffernan,Cognitive psychology / Cognitive science
+Cristina Heffernan,Adaptive/Personalized learning and intelligent tutors
+Nikolas Martelaro,Learning analytics
+Nikolas Martelaro,HCI
+Nikolas Martelaro,Wearable / physiological technology
+Nikolas Martelaro,Accessibility and technology
+Nikolas Martelaro,AI
+Nikolas Martelaro,Pedagogical agents
+Nikolas Martelaro,Design Research
+Nikolas Martelaro,Human-AI Interaction
+Nikolas Martelaro,Manufacturing
+Nikolas Martelaro,Autonomous technology
+Joshua Sunshine,Learning analytics
+Joshua Sunshine,Social welfare development and responsibility
+Joshua Sunshine,Programming
+Joshua Sunshine,HCI
+Joshua Sunshine,Ethical AI
+Joshua Sunshine,Machine learning
+Joshua Sunshine,Data mining
+Joshua Sunshine,Software engineering
+Joshua Sunshine,Data visualization representations and dashboards
+Joshua Sunshine,Computing technology
+Joshua Sunshine,Computing technology
+Joshua Sunshine,Software engineering
+Sang Won Lee,Collaborative and/or participatory learning
+Sang Won Lee,Programming
+Sang Won Lee,HCI
+Sang Won Lee,Creativity
+Mark Riedl,Ethical AI
+Mark Riedl,Machine learning
+Mark Riedl,AI
+Mark Riedl,Bias and equity in AI
+Jennifer Cross,Broadening participation of historically marginalized groups
+Jennifer Cross,Robots
+Jennifer Cross,Workforce development
+Jennifer Cross,Mixed methods
+Jennifer Cross,Human-AI Interaction
+Emily Moore,Science education
+Emily Moore,Inclusive/universal design
+Emily Moore,Accessibility and technology
+Vincent Aleven,Adaptive/Personalized learning and intelligent tutors
+Vincent Aleven,Games and game making
+Meng Jiang,Natural language processing and speech technologies
+Meng Jiang,Data mining
+Wei Yan,Narrative and simulated environments
+Wei Yan,Machine learning
+Wei Yan,Modeling and simulation (including agent-based modeling)
+Wei Yan,AI
+Wei Yan,Augmented/virtual/mixed reality
+Yun Huang,Social welfare development and responsibility
+Yun Huang,HCI
+Yun Huang,Crowdsourcing
+Yun Huang,Pedagogical agents
+Yun Huang,Mobile learning
+Yun Huang,Collaborative and/or participatory learning
+Yun Huang,Human-AI Interaction
+Michael Horn,Interactive Displays
+Michael Horn,HCI
+Gregory Chung,Data mining
+Gregory Chung,Games and game making
+Claire Christensen,Science education
+Claire Christensen,Math education
+Claire Christensen,Engineering education
+Devin Harris,Cyber-enhanced/Computer-assisted assessments
+Devin Harris,Engineering education
+Devin Harris,Graphics
+Julie Washington,Broadening participation of historically marginalized groups
+Julie Washington,ELA education
+Julie Washington,Cultural competence/responsiveness
+Robin Morris,Medicine
+Robin Morris,Brain function
+Robin Morris,Inclusive/universal design
+Robin Morris,Neuroscience
+Mari Ostendorf,Natural language processing and speech technologies
+Abeer Alwan, Natural language processing and speech technologies
+Diane Litman,Natural language processing and speech technologies
+Diane Litman,AI
+Diane Litman,Spoken language
+Diane Litman,HCI
+Elaine Wang,Instructional Design
+Elaine Wang,Policy
+Elaine Wang,Educator professional learning
+Elaine Wang,ELA education
+Elaine Wang,Evaluation
+Richard Mayer,Cognitive psychology / Cognitive science
+Richard Mayer,Online learning
+Richard Mayer,Media use
+Nicoletta Adamo-Villani,HCI
+Nicoletta Adamo-Villani,Pedagogical agents
+Nicoletta Adamo-Villani,Data visualization representations and dashboards
+Katharina Kann,Natural language processing and speech technologies
+Katharina Kann,Machine learning
+Joseph Polman,Inquiry learning (e.g. project/problem based learning)
+Joseph Polman,Science education
+Joseph Polman,Social sciences education
+Zachary Alstad,Augmented/virtual/mixed reality
+Robert LiKamWa,Graphics
+Robert LiKamWa,Augmented/virtual/mixed reality
+Robert LiKamWa,Computer vision technologies
+Robert LiKamWa,Computing technology
+Erin Ottmar,Social welfare development and responsibility
+Erin Ottmar,Social emotional learning
+Erin Ottmar,Math education
+Erin Ottmar,Cognitive psychology / Cognitive science
+Erin Ottmar,Creativity
+Vitaliy Popov,Learning analytics
+Vitaliy Popov,Narrative and simulated environments
+Vitaliy Popov,Enthnographic methods
+Vitaliy Popov,Cyber-enhanced/Computer-assisted assessments
+Vitaliy Popov,Collaborative and/or participatory learning
+Vitaliy Popov,Multimodal data analysis
+Vitaliy Popov,Augmented/virtual/mixed reality
+Vitaliy Popov,Qualitative methods
+Vitaliy Popov,Cognitive psychology / Cognitive science
+Vitaliy Popov,Learning analytics
+Vitaliy Popov,Formative assessment
+Matthew Anderson,Wearable / physiological technology
+Zhen Bai,HCI
+Zhen Bai,Accessibility and technology
+Zhen Bai,Pedagogical agents
+Zhen Bai,Augmented/virtual/mixed reality
+Zhen Bai,Collaborative and/or participatory learning
+Zhen Bai,Cognitive psychology / Cognitive science
+Shuchisnigdha Deb,Human-AI Interaction
+Shuchisnigdha Deb,Workforce development
+Shuchisnigdha Deb,Augmented/virtual/mixed reality
+Shuchisnigdha Deb,HCI
+Paulo Blikstein,Science education
+Paulo Blikstein,Computer science education
+Paulo Blikstein,Inquiry learning (e.g. project/problem based learning)
+Paulo Blikstein,Modeling and simulation (including agent-based modeling)
+Paulo Blikstein,Critical theory and identity
+Paulo Blikstein,Games and game making
+Paulo Blikstein,Computing technology
+Paulo Blikstein,Interactive Displays
+Lydia Chilton,AI
+Lydia Chilton,Data visualization representations and dashboards
+Lydia Chilton,Computing technology
+Lydia Chilton,Creativity
+Lydia Chilton,Design Research
+Dong Wang,HCI
+Dong Wang,Wearable / physiological technology
+Dong Wang,Smart & connected communities for learning
+Dong Wang,Data mining
+Dong Wang,Computing technology
+Dong Wang,Human-AI Interaction
+Wei Wang,AI
+Wei Wang,Software engineering
+Wei Wang,Computing technology
+Pengbo Chu,Learning analytics
+Pengbo Chu,Graphics
+Pengbo Chu,Mineral processing
+Pengbo Chu,Chemistry
+Pengbo Chu,Machine learning
+Jung Hyup Kim,Learning analytics
+Jung Hyup Kim,Research Partnerships
+Jung Hyup Kim,Biometrics (e.g. eye-tracking EEG)
+Jung Hyup Kim,Human-AI Interaction
+Jung Hyup Kim,Self-regulation reflection and metacognition
+Martina Rau,Cultural competence/responsiveness
+Martina Rau,Multimodal data analysis
+Martina Rau,Data mining
+Martina Rau,Data visualization representations and dashboards
+Martina Rau,Adaptive/Personalized learning and intelligent tutors
+Evgeny Chukharev-Hudilainen,Natural language processing and speech technologies
+Evgeny Chukharev-Hudilainen,Cognitive psychology / Cognitive science
+Evgeny Chukharev-Hudilainen,Spoken language
+Alina Reznitskaya,Cognitive psychology / Cognitive science
+Alina Reznitskaya,Educator professional learning
+Alina Reznitskaya,Quantitative methods
+Alina Reznitskaya,Pedagogy
+Elisa Shernoff,Culturally responsive
+Elisa Shernoff,Broadening participation of historically marginalized groups
+Matthew Stone,Natural language processing and speech technologies
+Matthew Stone,Pedagogical agents
+Matthew Stone,AI knowledge representation and reasoning
+Melissa Malzkuhn,Pedagogical agents
+Melissa Malzkuhn,Creativity
+Melissa Malzkuhn,Inquiry learning (e.g. project/problem based learning)
+Melissa Malzkuhn,Data visualization representations and dashboards
+Issifu Harruna,Science education
+Conrad Ingram,Science education
+Xinle Li,Science education
+Lydia Davenport,Educator professional learning
+Jacob Oluwoye,Environmental Science
+Peter Clarke,Computer science education
+Peter Clarke,Software engineering
+Peter Clarke,Modeling and simulation (including agent-based modeling)
+Peter Clarke,Machine learning
+Anjan Biswas,Math education
+Jennifer Richardson,Instructional Design
+Jennifer Richardson,Educator professional learning
+Jennifer Richardson,Online learning
+Jennifer Richardson,Pedagogy
+Jennifer Richardson,Software engineering
+Jennifer Richardson,Evaluation
+Mina Johnson-Glenberg,Augmented/virtual/mixed reality
+Robert Clements,Graphics
+Robert Clements,Physcial Sciences
+Robert Clements,Medicine
+Robert Clements,Data mining
+Robert Clements,Augmented/virtual/mixed reality
+Robert Clements,Biometrics (e.g. eye-tracking EEG)
+Robert Clements,Interactive Displays
+Bedrich Benes,Graphics
+Bedrich Benes,Data visualization representations and dashboards
+Stacy Shaw,Math education
+Stacy Shaw,Software engineering
+Stacy Shaw,Creativity
+Stacy Shaw,Math education
+Stacy Shaw,Mental health
+Dominic Kao,HCI
+Dominic Kao,Augmented/virtual/mixed reality
+Dominic Kao,Games and game making
+Gerald Knezek,Survey measures
+Gerald Knezek,Software engineering
+Jean Oh,Narrative and simulated environments
+Jean Oh,Robots
+Jean Oh,AI
+Jean Oh,Computer vision technologies
+Jean Oh,Human-AI Interaction
+Jeremy Jarzembak,Learning analytics
+Jeremy Jarzembak,Virtual and remote laboratories / field trips
+Lining Yao,Wearable / physiological technology
+Lining Yao,Design Research
+Lining Yao,Inclusive/universal design
+Lining Yao,HCI
+Keenan Crane,Pedagogical agents
+Jeffrey Ogle,Other
+Jeffrey Ogle,Inquiry learning (e.g. project/problem based learning)
+Jeffrey Ogle,Educator professional learning
+Jeffrey Ogle,Cultural competence/responsiveness
+Jeffrey Ogle,Philosophy
+Jeffrey Ogle,Anthropology
+Jeffrey Ogle,Ethics
+Meltem Alemdar,Instructional Design
+Meltem Alemdar,Educator professional learning
+Meltem Alemdar,Science education
+Meltem Alemdar,Math education
+Meltem Alemdar,Engineering education
+Jivko Sinapov,Machine learning
+Jivko Sinapov,Robots
+Jivko Sinapov,Human-AI Interaction
+Jivko Sinapov,Multimodal communication
+Ann Eisenberg,Inquiry learning (e.g. project/problem based learning)
+Kenneth Holstein,Social welfare development and responsibility
+Kenneth Holstein,Machine learning
+Kenneth Holstein,Cultural competence/responsiveness
+Kenneth Holstein,AI
+Kenneth Holstein,Design Research
+Kenneth Holstein,Human-AI Interaction
+Chris Rogers,Creativity
+Francis Quek,HCI
+Francis Quek,Computer vision technologies
+Francis Quek,Data visualization representations and dashboards
+Lawrence Angrave,Accessibility and technology
+Lawrence Angrave,Instructional Design
+Michael Zang,Cultural competence/responsiveness
+Kilchan Choi,Learning analytics
+Kilchan Choi,Machine learning
+Kilchan Choi,Evaluation
+Kilchan Choi,Modeling and simulation (including agent-based modeling)
+Anirban Roy,Machine learning
+Anirban Roy,Computer vision technologies
+Jennifer Chiu,Science education
+Jennifer Chiu,Instructional Design
+Jennifer Chiu,Educator professional learning
+Bradford Campbell,Wearable / physiological technology
+Bradford Campbell,Smart & connected communities for learning
+Panagiotis Apostolellis,Informal settings
+Panagiotis Apostolellis,Computer science education
+Panagiotis Apostolellis,HCI
+Panagiotis Apostolellis,Computational thinking
+Panagiotis Apostolellis,Design Research
+Panagiotis Apostolellis,Interactive Displays
+Andrea Hillsamer,Cultural competence/responsiveness
+Alison Bailey,Broadening participation of historically marginalized groups
+Alison Bailey,Educator professional learning
+Alison Bailey,Cognitive psychology / Cognitive science
+Alison Bailey,Spoken language
+Alison Bailey,Critical theory and identity
+Alison Bailey,ELA education
+Alison Bailey,Qualitative methods
+Richard Correnti,Learning analytics
+Richard Correnti,Policy
+Richard Correnti,Math education
+Richard Correnti,Educator professional learning
+Richard Correnti,Research Partnerships
+Richard Correnti,Design Research
+Richard Correnti,Adaptive/Personalized learning and intelligent tutors
+Lindsay Clare Matsumura,Machine learning
+Lindsay Clare Matsumura,Cyber-enhanced/Computer-assisted assessments
+Lindsay Clare Matsumura,Qualitative methods
+Lindsay Clare Matsumura,Formal classroom settings
+Lindsay Clare Matsumura,Educator professional learning
+Steven Coxon,Inclusive/universal design
+Steven Coxon,Robots
+Steven Coxon,Creativity
+Christos Mousa,Pedagogical agents
+Christos Mousa,Augmented/virtual/mixed reality
+Christos Mousa,HCI
+Eliana Colunga,ELA education
+Eliana Colunga,Cognitive psychology / Cognitive science
+Eliana Colunga,Modeling and simulation (including agent-based modeling)
+Eliana Colunga,HCI
+Ibrahim Dahlstrom-Hakki,Learning analytics
+Ibrahim Dahlstrom-Hakki,Inclusive/universal design
+Ibrahim Dahlstrom-Hakki,Instructional design
+Ibrahim Dahlstrom-Hakki,Neuroscience
+Ibrahim Dahlstrom-Hakki,Accessibility and technology
+Ibrahim Dahlstrom-Hakki,Cognitive psychology / Cognitive science
+Ibrahim Dahlstrom-Hakki,Games and game making
+Jodi Asbell-Clarke,Cyber-enhanced/Computer-assisted assessments
+Jodi Asbell-Clarke,Computational thinking
+Jodi Asbell-Clarke,Games and game making
+Jodi Asbell-Clarke,Inclusive/universal design
+Richard Gerkin,Neuroscience and analytics
+Richard Gerkin,Neuroscience
+Richard Gerkin,Physiological sciences
+Dustin Thoman,Collaborative and/or participatory learning
+Dustin Thoman,Identity
+Dustin Thoman,Social welfare development and responsibility
+Dustin Thoman,Community partnerships
+Dustin Thoman,Self-regulation reflection and metacognition
+Bruce McLaren,Adaptive/Personalized learning and intelligent tutors
+Bruce McLaren,Games and game making
+Janet Bowers,Inquiry learning (e.g. project/problem based learning)
+Janet Bowers,Math education
+Janet Bowers,Instructional Design
+Janet Bowers,Pedagogy
+Raffaella Borasi,Workforce development
+Raffaella Borasi,Math education
+Raffaella Borasi,Educator professional learning
+Tamar Fuhrmann,Computer science education
+Tamar Fuhrmann,Cultural competence/responsiveness
+Tamar Fuhrmann,Community partnerships
+Tamar Fuhrmann,Ethics
+Carl Vondrick,Machine learning
+Carl Vondrick,Computer vision technologies
+Nigel Bosch,Learning analytics
+Nigel Bosch,Bias and equity in AI
+Nigel Bosch,HCI
+Leslie Neely,Multimodal data analysis
+Leslie Neely,Workforce development
+Leslie Neely,Inclusive/universal design
+Sergiu Dascalu,Software engineering
+Sergiu Dascalu,Narrative and simulated environments
+Sergiu Dascalu,Neuroscience
+Sergiu Dascalu,HCI
+Sergiu Dascalu,Data mining
+Sergiu Dascalu,Augmented/virtual/mixed reality
+Sergiu Dascalu,Data visualization representations and dashboards
+Danielle Oprean,Science education
+Danielle Oprean,Data mining
+Danielle Oprean,Augmented/virtual/mixed reality
+Danielle Oprean,Games and game making
+Xiaojin Zhu,Learning analytics
+Xiaojin Zhu,Machine learning
+Xiaojin Zhu,Social welfare development and responsibility
+Xiaojin Zhu,Behavior analysis
+Rebecca Vieyra,Wearable / physiological technology
+Rebecca Vieyra,Educator professional learning
+Chrystian Vieyra,Software engineering
+Daniel O'Brien,Environmental Science
+Daniel O'Brien,Science education
+Daniel O'Brien,Engineering education
+Daniel O'Brien,Energy
+Daniel O'Brien,Policy
+Kangwon Seo,Educator professional learning
+Kangwon Seo,Machine learning
+Kangwon Seo,Learning analytics
+Kangwon Seo,Multimodal data analysis
+Kangwon Seo,Software engineering
+Kangwon Seo,Bias and equity in AI
+Leping Liu,Learning analytics
+Leping Liu,Mental health
+Leping Liu,Instructional Design
+Li-Ting Chen,Learning analytics
+Li-Ting Chen,Cyber-enhanced/Computer-assisted assessments
+Li-Ting Chen,Online learning
+Li-Ting Chen,Health
+Ying Yang,Engineering education
+Kathy Ewoldt,Cyber-enhanced/Computer-assisted assessments
+Kathy Ewoldt,Inclusive/universal design
+Kathy Ewoldt,ELA education
+Kathy Ewoldt,Accessibility and technology
+Amanda Olsen,Quantitative methods
+Jiebo Luo,Learning analytics
+Jiebo Luo,Machine learning
+Jiebo Luo,AI
+Jiebo Luo,Data mining
+Jiebo Luo,Media use
+Michael Daley,Science education
+Michael Daley,Math education
+Michael Daley,Engineering education
+Byron Lahey,Human-AI Interaction
+Byron Lahey,Embodied learning and cognition
+Byron Lahey,HCI
+Christy Spackman,Inquiry learning (e.g. project/problem based learning)
+Christy Spackman,Physiological sciences
+Christy Spackman,Broadening participation of historically marginalized groups
+Philip Yasskin,Instructional Design
+Philip Yasskin,Cultural competence/responsiveness
+Philip Yasskin,Physics
+Philip Yasskin,Pedagogical agents
+Philip Yasskin,Science education
+Philip Yasskin,Math education
+Philip Yasskin,Engineering education
+Philip Yasskin,Mathematical sciences
+Dezhen Song,Machine learning
+Dezhen Song,Computer vision technologies
+Dezhen Song,Robots
+Heather Burte,Cognitive psychology / Cognitive science
+Heather Burte,Science education
+Heather Burte,Math education
+Heather Burte,Engineering education
+Chelsea Lyles,Educator professional learning
+Chelsea Lyles,Policy
+Phyllis Newbill,Informal settings
+Myounghoon Jeon,Autonomous technology
+Myounghoon Jeon,Accessibility and technology
+Myounghoon Jeon,Multimodal data analysis
+Myounghoon Jeon,Creativity
+Myounghoon Jeon,Physiological sciences
+Myounghoon Jeon,Human-AI Interaction
+Myounghoon Jeon,Interactive Displays
+Jeff Rosen,Survey measures
+Jeff Rosen,Inclusive/universal design
+Jeff Rosen,Social emotional learning
+Roxanne Moore,Graphics
+Ken Koedinger,Data mining
+Ken Koedinger,AI
+Ken Koedinger,Adaptive/Personalized learning and intelligent tutors
+Ken Koedinger,Learning Engineering

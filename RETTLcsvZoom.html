@@ -1,0 +1,393 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+<!--from online codepen-->
+<!-- <nav>
+	<div class="up">&larr; UP</div>
+</nav>
+<div class="feature" id="chart"></div> -->
+
+
+<script>
+  // set the dimensions and margins of the graph
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+  width = 1300 - margin.left - margin.right,
+  height = 800 - margin.top - margin.bottom;
+
+
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .attr('id','treemap')
+//.attr("viewBox", `0 0 1000 500`)
+.append("g")
+  .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+
+//wrap text, *parent tiles coloring, middle of screen*, dynamic fitting (no hardcoding) search for "responsive d3"
+//tooltip checkout
+
+// Read data
+d3.csv('RETTLdata.csv', function(data1) {
+   d3.csv('Apr 28 Expertise Tagv2.csv', function(data2) {
+     console.log(data1);
+     console.log(data2);
+
+
+var dict = {};
+let expArray=[];
+
+expArray = data1.map(item=> item.MappedExpertise);
+const mappedExp ={
+  mExp: '',
+  count: 0,
+  actors:[]
+};
+
+var data3 = data1.map(function(d) {
+  return {
+    exp: d.MappedExpertise,
+    act: d.Actors
+  }
+});
+
+//console.log(data3.act)
+
+
+let i = 0;
+while(i<expArray.length){
+  var tempArr = String(data3[i].exp).split(",");
+  let j =0;
+  while(j<tempArr.length){
+    var cur = tempArr[j];
+    cur=cur.trim();
+    if(cur.includes(" ")){
+      
+      let first = cur.split(" ").shift();
+      let rest = cur.substring(first.length).toLowerCase();
+      cur = first + rest;
+      
+    }
+
+    const tempExp = mappedExp;
+    tempExp.mExp=cur;
+    if(i==0){
+      console.log(data3[i].act)
+    }
+    tempExp.actors.push(data3[i].act)
+    if(!(cur in dict)){
+      dict[cur]=1;
+    }
+    else{
+      dict[cur] +=1;
+    }
+    j++;
+  }
+  i++;
+}
+
+let mappedExpArr=[Object.keys(dict).length]
+
+//console.log(expArray)
+console.log(dict)
+
+  let k = 12;
+  while(k<data2.length){
+    var curExp = data2[k].MappedExpertise;
+    data2[k].Count=dict[curExp];
+    k+=1;
+  }
+  console.log(data2.Count)
+
+  let parentName = [];
+  for(let l=0; l<12;l++){
+    parentName[l]=data2[l].MappedExpertise;
+  }
+
+  const root = d3.stratify()
+    .id(function(d) { return d.MappedExpertise; })   // Name of the entity (column name is name in csv)
+    .parentId(function(d) { return d.Parent; })   // Name of the parent (column name is parent in csv)
+    (data2);
+    //entries(d.Count);
+    root.sum(function(d) { return d.Count })
+
+   // prepare a color scale
+  var color = d3.scaleOrdinal()
+  .domain(parentName)
+  .range([ "#FF0000", "#FF5300", "#FFA500","#FFD200",
+  "#FFFF00","#80C000","#008000","#004080","#0000FF","#2600C1","#4B0082"])
+
+  // And an opacity scale
+  var opacity = d3.scaleLinear()
+    .domain([10, 30])
+    .range([.5,1])
+
+  const tooltip = d3.select('body')
+                  .append('div')
+                  //.style('position', 'relative')
+                  .style('z-index', '10')
+                  .style('background-color','white')
+                  .style('border', 'solid')
+                  .style('border-width', '2px')
+                  .style('border-radius', '5px')
+                  .style('padding', '5px')
+                  .attr('id', 'tooltip');
+const Tooltip = d3.select('body')
+                  .append('div')
+                  .style('position', 'absolute')
+                  .style('z-index', '10')
+                  .style('background-color','white')
+                  .style('border', 'solid')
+                  .style('border-width', '2px')
+                  .style('border-radius', '5px')
+                  .style('padding', '5px')
+                  .attr('id', 'Tooltip');
+  console.log(data2);
+
+  // var dataScaleW = d3.scaleLinear()
+  //   .domain([d3.min(data2, function(d){
+  //     return ((d.MappedExpertise.length))
+  //   }),
+  //        d3.max(data2, function(d){return d.Count})]);
+  //   dataScaleW.range([0,100]); //here you can choose a hard
+  
+  // var dataScaleH = d3.scaleLinear()
+  // .domain([40,d3.max(data2, function(d){return d.Count})]);
+  // dataScaleH.range([0,100]); //here you can choose a hard
+  
+
+  
+  // Then d3.treemap computes the position of each element of the hierarchy
+  // The coordinates are added to the root object above
+  const treemap = d3.treemap()
+    .size([width, height])
+    .paddingTop(28)
+    .paddingRight(7)
+    .paddingInner(3);
+          
+
+    //.paddingOuter(6)
+    //.padding(20)
+  
+  treemap(root);
+  console.log(root.leaves())
+  console.log(root.leaves()[0].parent.children.length)
+  //asS=""
+  //console.log("AI Approaches and Technologies".children)
+const cell = svg.selectAll("g")
+  .data(root.leaves())
+  .enter()
+  .append("g")
+  .attr('transform', d => `translate(${d.x0},${d.y0})`)
+  
+  .on('mousemove', d => {
+    tooltip.transition()
+            .duration(200)
+            .style('opacity', 1); //opacity of text on bottom when hovering mouse
+    tooltip.attr('count', d.data.Count);
+    //console.log(d.Parent.children)
+    //p = d.parent.id
+    
+    //var q = {}
+    var a = []
+    for(num=0;num<d.parent.children.length;num++){
+        m= d.parent.children[num].data.MappedExpertise
+        c=d.parent.children[num].data.Count
+        // ensures the ones that didnt appear in RETTLcsv arent displayed
+        if(c!=null){
+            a.push([m,c])
+        }
+        a.sort(compareSecondColumn);
+
+        function compareSecondColumn(a, b) {
+            if (a[1] === b[1]) {
+                return 0;
+            }
+            else {
+                return (a[1] > b[1]) ? -1 : 1;
+            }
+        }
+    }
+    // for(num=0;num<d.parent.children.length;num++){
+    //     m= d.parent.children[num].data.MappedExpertise
+    //     c=d.parent.children[num].data.Count
+    //     q[m]=c
+    // }
+    // console.log(q)
+    // asS = q.toString()
+    tooltip.html(
+            a.map(e => e.join(", value: ")).join("<br />")
+            //a.join("<br />").join("\r\n")
+    )
+    .style('top', `${d3.event.pageY + 10}px`)
+    .style('left', `${d3.event.pageX + 8}px`)
+    .attr("data-html","true");
+
+    Tooltip.transition()
+            .duration(200)
+            .style('opacity', 1); //opacity of text on bottom when hovering mouse
+    Tooltip.attr('count', d.data.Count);
+    Tooltip.html(
+      'Expertise: ' + d.data.MappedExpertise + '<br>' +
+      'Value: ' + d.data.Count
+    )
+      .style('top', `${d3.event.pageY + 10}px`)
+      .style('left', `${d3.event.pageX + 8}px`);
+  })
+  
+  .on('mouseout', d => {
+    // tooltip.transition()
+    //         .duration(2000)
+    //         .style('opacity', 0);
+    Tooltip.transition()
+            .duration(200)
+            .style('opacity', 0);
+   });
+
+  
+// x = d3.scaleLinear().domain([0, width]).range([0, width]),
+// y = d3.scaleLinear().domain([0, height]).range([0, height]),
+
+  cell
+    // .selectAll("rect")
+    // .data(root.leaves())
+    // .enter()
+    .append("rect")
+    .attr('class', 'tile')
+    .attr('id', function(d){return d.data.id})
+    .attr('width', function (d) { 
+      // if(d.data.MappedExpertise.localeCompare("Neuroscience")==0){
+      //   w = d.x1-d.x0
+      //   console.log(w)
+      // }
+      return d.x1 - d.x0; 
+      //return dataScaleW(d.data.Count)
+    })
+    .attr('height', function (d) { 
+      //return dataScaleH(d.data.Count);
+      return d.y1 - d.y0; 
+    })
+    // .style('left', function (d) { return x(d.x0); })
+    // .style('top', function (d) { return y(d.y0); })
+    // .style('width', function (d) { return x(d.x1); })
+    // .style('height', function (d) { return y(d.y1); })
+    .attr("mapped",function(d){d.data.MappedExpertise})
+    .attr("count",function(d){d.data.Count})
+    .attr("parent",function(d){d.data.Parent})
+    .style("stroke", "black")
+    .style("fill", function(d){ return color(d.data.Parent)} )
+    .style("opacity", /*function(d){ return opacity(d.data.Count)}*/0.5);
+
+  svg
+    .selectAll("text")
+    .data(root.leaves())
+    .enter()
+    .append("text")
+      .attr("x", function(d){ 
+        if(d.data.MappedExpertise.includes("Cyber-enhanced")){
+        return d.x0+16
+      }
+        return d.x0+5
+      })    // +10 to adjust position (more right)
+      .attr("y", function(d){ 
+        if(d.data.MappedExpertise.includes("Spoken")){
+          return d.y0+((d.y1-d.y0)/2)
+        }
+        else if(d.y1-d.y0<20){
+          return d.y0+((d.y1-d.y0)/2)+3
+        }
+        return d.y0+18
+      })    
+      .text(function(d){ 
+        if(d.data.Count>2 && d.y1-d.y0>14){ 
+          word = d.data.MappedExpertise 
+          wordlen = word.length*8 
+          w=d.x1-d.x0 
+          if(word.includes("partnerships")){
+            return word.substring(0,5)+".."
+          }
+          if(w<wordlen){
+            num = w/8
+            ts = word.substring(0,num)+".."
+            if(word.includes("Educator")){
+              console.log(ts.length*8)
+            }
+            if(ts.length*5<w){
+              return ts
+            }
+            else{
+              while(ts.length*7>=w){
+                num=num-1
+                ts = word.substring(0,num)+".."
+              }
+              return ts
+            }
+            
+          }
+          //console.log("no")
+          return d.data.MappedExpertise
+        }
+        
+      })
+      .attr("font-size", "15px")
+      .attr("fill", "black")
+
+   // add titles   
+   svg
+  .selectAll("titles")
+  .data(root.descendants().filter(function(d){return d.depth==1}))
+  .enter()
+  .append("text")
+    .attr("x", function(d){ 
+      
+      return d.x0
+    })
+    .attr("y", function(d){ return d.y0+21})
+    .text(function(d){ return d.data.MappedExpertise })
+    .attr("font-size", "16px")
+    .attr("fill",  function(d){ return color(d.data.MappedExpertise)} )
+  
+   //original count
+   svg
+    .selectAll("vals")
+    .data(root.leaves())
+    .enter()
+    .append("text")
+    .attr("x", function(d){ 
+      if(d.x1-d.x0<15){
+        return d.x0
+      }
+      return d.x0+5
+    })    // +10 to adjust position (more right)
+    .attr("y", function(d){
+      if(d.data.MappedExpertise.includes("Spoken")){
+          return d.y0+30
+        }
+      else if(d.y1-d.y0<20){
+        return d.y0+((d.y1-d.y0)/2)+3
+      }
+      else if(d.data.Count>2){
+        return d.y0+35
+      } 
+      else{return d.y0+15}
+    })   
+    .text(function(d){ return d.data.Count})
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+
+  
+
+});
+});
+
+</script>
